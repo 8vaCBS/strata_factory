@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strata Factory | Automatización Estratégica para Negocios en Chile y LATAM</title>
+    
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="p4IOxsoqqkGWL_Yt-hknPLWVNMkaUzTZ7UmfvjZakB8" />
+
+    <!-- SEO & GEO Meta Tags -->
+    <meta name="description" content="¿Tu negocio pierde dinero en procesos manuales o software genérico costoso? En Strata Factory automatizamos la operación real de salones, talleres, inmobiliarias, e-commerce y clínicas en Chile, México, Colombia, Perú, Ecuador, Costa Rica y Panamá.">
+    <meta name="keywords" content="automatizacion de procesos latam, software a medida pymes chile mexico colombia peru, automatizacion talleres mecanicos, crm inmobiliario latam, agenda salones de belleza, strata factory">
+    <meta name="author" content="Strata Factory">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://stratafactory.cl/">
+    
+    <!-- Geo Target Meta Tags -->
+    <meta name="geo.region" content="CL-RM">
+    <meta name="geo.placename" content="Santiago">
+    <meta name="geo.position" content="-33.448889;-70.669265">
+    <meta name="ICBM" content="-33.448889, -70.669265">
+
+    <!-- Open Graph / Social Media (Facebook, LinkedIn, WhatsApp Preview) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://stratafactory.cl/">
+    <meta property="og:title" content="Strata Factory | Automatización Operativa Estratégica para PYMEs">
+    <meta property="og:description" content="Optimiza la operación de tu empresa. Eliminamos tareas manuales y costos innecesarios en software genérico.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1200">
+    <meta property="og:locale" content="es_CL">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Strata Factory | Automatización Estratégica">
+    <meta name="twitter:description" content="Automatización a medida para industrias clave en Chile y LATAM. Sin complejidad.">
+
+    <!-- Schema.org JSON-LD (Rich Snippets para Google y GEO para Motores de IA) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Strata Factory",
+      "url": "https://stratafactory.cl",
+      "logo": "https://stratafactory.cl/logo.png",
+      "image": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1200",
+      "description": "Firma especializada en automatización operativa de procesos para pequeñas y medianas empresas en Chile, México, Colombia, Perú, Ecuador, Costa Rica, Panamá y toda Latinoamérica.",
+      "email": "contacto@stratafactory.cl",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Santiago",
+        "addressRegion": "Región Metropolitana",
+        "addressCountry": "CL"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-33.448889",
+        "longitude": "-70.669265"
+      },
+      "areaServed": ["Chile", "México", "Colombia", "Perú", "Ecuador", "Costa Rica", "Panamá", "LATAM"],
+      "knowsAbout": [
+        "Automatización de procesos",
+        "Software a medida para PYMEs",
+        "Control de inventario e-commerce",
+        "Postventa inmobiliaria",
+        "Gestión de citas médicas y estética"
+      ]
+    }
+    </script>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        emerald: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            400: '#34d399',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                        },
+                        red: {
+                            50: '#fef2f2',
+                            100: '#fee2e2',
+                            500: '#ef4444',
+                            600: '#dc2626',
+                            700: '#b91c1c',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        @keyframes subtle-bounce {
+            0%, 100% {
+                transform: translateY(0) scale(1);
+            }
+            50% {
+                transform: translateY(-6px) scale(1.02);
+            }
+        }
+        .animate-mobile-bounce {
+            animation: subtle-bounce 2s infinite ease-in-out;
+        }
+        @media (min-width: 768px) {
+            .animate-mobile-bounce {
+                animation: none !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 selection:bg-emerald-100 selection:text-emerald-900">
+
+    <!-- Navigation / Header Bar -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <span class="text-2xl font-extrabold tracking-tight bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent">
+                    Strata Factory
+                </span>
+            </div>
+            <!-- CTA Header en Rojo -->
+            <a href="#contacto" class="hidden sm:inline-flex bg-red-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-red-700 transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] text-sm shadow-md shadow-red-600/10">
+                Comenzar transformación
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="py-20 md:py-28 px-6 text-center bg-white border-b border-slate-100 relative overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full pointer-events-none opacity-50">
+            <div class="absolute top-12 left-10 w-72 h-72 bg-emerald-50 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-10 right-10 w-96 h-96 bg-slate-50 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="max-w-4xl mx-auto relative z-10">
+            <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-50 text-emerald-700 text-sm font-semibold mb-8">
+                Automatización Operativa Estratégica en Chile y LATAM
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-8 tracking-tight text-slate-900 leading-tight">
+                ¿Tu negocio está perdiendo dinero en software que no necesita?
+            </h1>
+            <p class="text-lg md:text-xl text-slate-600 mb-12 max-w-2xl mx-auto leading-relaxed">
+                Mientras pagas caro por plataformas genéricas que nadie usa del todo, tus procesos siguen siendo manuales, lentos y propensos a errores. En Strata Factory automatizamos tu operación real.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
+                <a href="#contacto" class="w-full sm:w-auto bg-red-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-red-700 transition-all duration-200 hover:scale-[1.03] active:scale-[0.97] shadow-lg shadow-red-200/50 text-center">
+                    Analizar mi caso
+                </a>
+                <a href="#soluciones" class="w-full sm:w-auto bg-red-600 text-white border border-red-600 px-8 py-4 rounded-xl font-semibold transition-all duration-200 text-center hover:scale-[1.01] animate-mobile-bounce shadow-lg shadow-red-200/50 md:bg-slate-50 md:text-slate-700 md:border-slate-200 md:shadow-none md:hover:bg-red-600 md:hover:text-white md:hover:border-red-600">
+                    Ver soluciones por sector
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Solutions Section (Grid de Tarjetas por Sector) -->
+    <section id="soluciones" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="text-emerald-600 font-bold uppercase tracking-wider text-sm">Especialización de Procesos</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold mt-2 text-slate-900">¿Soluciones operativas por sector?</h2>
+            <p class="text-slate-600 mt-4">No vendemos herramientas genéricas. Diseñamos el motor de flujo exacto que requiere la naturaleza de tu industria. Algunos ejemplos donde la automatización y soluciones SIMPLES de adoptar, ayudarán a mejorar tus procesos y rentabilidad.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1: Salones de Belleza -->
+            <div class="bg-white rounded-3xl border border-slate-100 overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group">
+                <div class="h-52 overflow-hidden relative bg-slate-800">
+                    <img src="https://images.unsplash.com/photo-1560066984-1389b4cda4f8?q=80&w=800" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=800';" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" alt="Automatización para Salones de Belleza">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-900/30 to-transparent"></div>
+                    <div class="absolute bottom-4 left-6">
+                        <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest bg-slate-950/40 px-2 py-1 rounded-md backdrop-blur-sm">Sector Estética</span>
+                        <h3 class="text-white text-xl font-bold mt-1">Salones de belleza</h3>
+                    </div>
+                </div>
+                <div class="p-6 flex-grow flex flex-col justify-between">
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Tus estilistas anotan citas en WhatsApp personal. Calcular comisiones cada semana genera roces innecesarios. Los clientes se van a la competencia por falta de seguimiento.
+                    </p>
+                    <div class="mt-8 pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full">Impacto: +30% Confirmación</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Talleres Mecánicos -->
+            <div class="bg-white rounded-3xl border border-slate-100 overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group">
+                <div class="h-52 overflow-hidden relative bg-slate-800">
+                    <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?q=80&w=800" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1486006920555-c77dce18193b?q=80&w=800';" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" alt="Gestión de Talleres Mecánicos">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-900/30 to-transparent"></div>
+                    <div class="absolute bottom-4 left-6">
+                        <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest bg-slate-950/40 px-2 py-1 rounded-md backdrop-blur-sm">Sector Automotriz</span>
+                        <h3 class="text-white text-xl font-bold mt-1">Talleres mecánicos</h3>
+                    </div>
+                </div>
+                <div class="p-6 flex-grow flex flex-col justify-between">
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Las órdenes de trabajo se pierden o quedan ilegibles. El cliente llama tres veces para saber si su auto está listo y no tienes datos reales de tus ganancias.
+                    </p>
+                    <div class="mt-8 pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full">Impacto: -50% Tiempo Recepción</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Soluciones Inmobiliarias -->
+            <div class="bg-white rounded-3xl border border-slate-100 overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group">
+                <div class="h-52 overflow-hidden relative bg-slate-800">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=800" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582407947304-fd86f028f716?q=80&w=800';" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" alt="Postventa Inmobiliaria Chile">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-900/30 to-transparent"></div>
+                    <div class="absolute bottom-4 left-6">
+                        <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest bg-slate-950/40 px-2 py-1 rounded-md backdrop-blur-sm">Sector Propiedades</span>
+                        <h3 class="text-white text-xl font-bold mt-1">Soluciones Inmobiliarias</h3>
+                    </div>
+                </div>
+                <div class="p-6 flex-grow flex flex-col justify-between">
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Las solicitudes de postventa quedan dispersas en bandejas de correo. Sin registro formal de cada intervención, la responsabilidad legal queda sin respaldo.
+                    </p>
+                    <div class="mt-8 pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full">Impacto: 0% Fugas Legales</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4: Tiendas ecommerce -->
+            <div class="bg-white rounded-3xl border border-slate-100 overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group">
+                <div class="h-52 overflow-hidden relative bg-slate-800">
+                    <img src="https://images.unsplash.com/photo-1556740758-90de374c12ad?q=80&w=800" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1472851294608-062f824d296e?q=80&w=800';" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" alt="Control de Inventario E-commerce">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-900/30 to-transparent"></div>
+                    <div class="absolute bottom-4 left-6">
+                        <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest bg-slate-950/40 px-2 py-1 rounded-md backdrop-blur-sm">Sector Comercio</span>
+                        <h3 class="text-white text-xl font-bold mt-1">Tiendas ecommerce</h3>
+                    </div>
+                </div>
+                <div class="p-6 flex-grow flex flex-col justify-between">
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Vendes por distintos canales pero el inventario nunca cuadra. Calcular tu margen real al mes es una odisea en Excel y los errores de stock generan devoluciones.
+                    </p>
+                    <div class="mt-8 pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full">Impacto: -90% Errores de Stock</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5: Consultas Médicas, Dentales y Spa -->
+            <div class="bg-white rounded-3xl border border-slate-100 overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group">
+                <div class="h-52 overflow-hidden relative bg-slate-800">
+                    <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=800" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=800';" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" alt="Agendamiento Consultorios Médicos">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-900/30 to-transparent"></div>
+                    <div class="absolute bottom-4 left-6">
+                        <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest bg-slate-950/40 px-2 py-1 rounded-md backdrop-blur-sm">Sector Salud y Bienestar</span>
+                        <h3 class="text-white text-xl font-bold mt-1">Consultas Médicas y Spa</h3>
+                    </div>
+                </div>
+                <div class="p-6 flex-grow flex flex-col justify-between">
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Las fichas clínicas están en papel o PDFs sueltos. Las confirmaciones de citas consumen a tu recepcionista y las cancelaciones tardías generan horas no facturadas.
+                    </p>
+                    <div class="mt-8 pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full">Impacto: 0% Horas No Facturadas</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6: Estudios de Profesionales -->
+            <div class="bg-white rounded-3xl border border-slate-100 overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group">
+                <div class="h-52 overflow-hidden relative bg-slate-800">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800';" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" alt="Gestión para Profesionales Independientes">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-900/30 to-transparent"></div>
+                    <div class="absolute bottom-4 left-6">
+                        <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest bg-slate-950/40 px-2 py-1 rounded-md backdrop-blur-sm">Servicios Profesionales</span>
+                        <h3 class="text-white text-xl font-bold mt-1">Estudios de Profesionales</h3>
+                    </div>
+                </div>
+                <div class="p-6 flex-grow flex flex-col justify-between">
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Trabajas solo pero el 30% de tu tiempo lo gastas en cotizaciones, seguimiento de cobros y administración que no te genera ingresos.
+                    </p>
+                    <div class="mt-8 pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full">Impacto: -30% Carga Admin</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section class="py-24 bg-white border-t border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <span class="text-emerald-600 font-bold uppercase tracking-wider text-sm">Nuestra Metodología</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold mt-2 text-slate-900">La ruta hacia la eficiencia</h2>
+                <p class="text-slate-600 mt-4">Un proceso enfocado en entender tu dinámica de trabajo, construir con precisión y desplegar resultados sin interrupciones operativas.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+                <div class="relative bg-slate-50 p-8 rounded-2xl border border-slate-100 group hover:border-emerald-200 transition-all">
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center font-bold text-lg mb-6">
+                        01
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Escucha Activa</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Sesión de 30 minutos sin costo para identificar cuellos de botella y pérdidas de rendimiento en tu negocio.
+                    </p>
+                </div>
+
+                <div class="relative bg-slate-50 p-8 rounded-2xl border border-slate-100 group hover:border-emerald-200 transition-all">
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center font-bold text-lg mb-6">
+                        02
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Arquitectura</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Diseñamos el flujo de automatización ideal para tus canales de comunicación cotidianos.
+                    </p>
+                </div>
+
+                <div class="relative bg-slate-50 p-8 rounded-2xl border border-slate-100 group hover:border-emerald-200 transition-all">
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center font-bold text-lg mb-6">
+                        03
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Construcción</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Desarrollamos e integramos las herramientas sin requerir descargas ni alterar tu flujo actual de trabajo.
+                    </p>
+                </div>
+
+                <div class="relative bg-slate-50 p-8 rounded-2xl border border-slate-100 group hover:border-emerald-200 transition-all">
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center font-bold text-lg mb-6">
+                        04
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Lanzamiento</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Implementación limpia con métricas de rendimiento visibles desde la primera jornada operativa.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-16 bg-slate-900 text-white rounded-3xl p-8 md:p-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="flex items-start gap-4">
+                        <span class="w-6 h-6 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center font-bold text-xs mt-0.5">✓</span>
+                        <div>
+                            <h4 class="font-bold text-slate-100 text-sm">Más Accesible</h4>
+                            <p class="text-slate-400 text-xs mt-1">Hasta un 50% de ahorro frente a licencias complejas.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <span class="w-6 h-6 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center font-bold text-xs mt-0.5">✓</span>
+                        <div>
+                            <h4 class="font-bold text-slate-100 text-sm">Implementación Ágil</h4>
+                            <p class="text-slate-400 text-xs mt-1">Planificación y despliegue técnico optimizados.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <span class="w-6 h-6 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center font-bold text-xs mt-0.5">✓</span>
+                        <div>
+                            <h4 class="font-bold text-slate-100 text-sm">Cero Barreras</h4>
+                            <p class="text-slate-400 text-xs mt-1">Tus clientes interactúan sin descargar nada.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <span class="w-6 h-6 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center font-bold text-xs mt-0.5">✓</span>
+                        <div>
+                            <h4 class="font-bold text-slate-100 text-sm">Escalabilidad</h4>
+                            <p class="text-slate-400 text-xs mt-1">Estructura preparada para crecer junto a tu negocio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Real Impact Metrics -->
+    <section class="py-24 bg-slate-900 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-emerald-400 font-bold uppercase tracking-wider text-xs">Métricas de Alto Impacto</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold mt-2 text-white">Impacto real en la operación</h2>
+                <p class="text-slate-400 text-sm mt-3">Resultados de integraciones previas que demuestran el poder de la automatización a medida.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-slate-950/60 border border-slate-800 p-8 rounded-2xl hover:border-emerald-500/30 transition-all group">
+                    <div class="text-5xl font-extrabold text-emerald-400 mb-4 tracking-tight group-hover:scale-105 transition-transform duration-300">
+                        60%
+                    </div>
+                    <h3 class="font-bold text-slate-100 text-base mb-2">Reducción de Tiempos</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Optimización integral de flujos de control en la postventa de desarrollos inmobiliarios.
+                    </p>
+                </div>
+
+                <div class="bg-slate-950/60 border border-slate-800 p-8 rounded-2xl hover:border-emerald-500/30 transition-all group">
+                    <div class="text-5xl font-extrabold text-emerald-400 mb-4 tracking-tight group-hover:scale-105 transition-transform duration-300">
+                        30%
+                    </div>
+                    <h3 class="font-bold text-slate-100 text-base mb-2">Clientes Recurrentes</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Módulos automatizados de fidelización y agendamiento proactivo en el sector estética.
+                    </p>
+                </div>
+
+                <div class="bg-slate-950/60 border border-slate-800 p-8 rounded-2xl hover:border-emerald-500/30 transition-all group">
+                    <div class="text-5xl font-extrabold text-emerald-400 mb-4 tracking-tight group-hover:scale-105 transition-transform duration-300">
+                        90%
+                    </div>
+                    <h3 class="font-bold text-slate-100 text-base mb-2">Menos Errores Stock</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Control sincronizado de inventario inteligente en portales comerciales y tiendas e-commerce.
+                    </p>
+                </div>
+
+                <div class="bg-slate-950/60 border border-slate-800 p-8 rounded-2xl hover:border-emerald-500/30 transition-all group">
+                    <div class="text-5xl font-extrabold text-emerald-400 mb-4 tracking-tight group-hover:scale-105 transition-transform duration-300">
+                        50%
+                    </div>
+                    <h3 class="font-bold text-slate-100 text-base mb-2">Menos Costos Admin</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Reducción de la carga burocrática y de cobranza en la prestación de servicios independientes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section (Dual Column Gestalt Conversion) -->
+    <section id="contacto" class="py-24 px-6 bg-slate-50 relative">
+        <div class="max-w-5xl mx-auto">
+            <div class="bg-white rounded-3xl border border-slate-100 p-8 md:p-16 shadow-xl relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Left: Description and WhatsApp Action -->
+                    <div class="lg:col-span-6 space-y-6">
+                        <span class="text-emerald-600 font-bold uppercase tracking-wider text-xs">Atención Directa LATAM</span>
+                        <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">Conversamos sobre tu desafío</h2>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Entendemos que cada negocio tiene su propia fricción operativa. Nuestra metodología se basa en la escucha activa para identificar y diseñar la automatización que realmente necesitas en Chile, México, Colombia, Perú, Ecuador, Costa Rica o Panamá.
+                        </p>
+                        
+                        <div class="pt-4">
+                            <p class="text-xs text-slate-400 mb-3 font-semibold uppercase tracking-wider">Acceso Inmediato</p>
+                            <a href="https://wa.me/56981749481?text=Hola,%20me%20interesa%20automatizar%20un%20proceso%20con%20Strata%20Factory.%20¿Podemos%20hablar?" 
+                               target="_blank"
+                               rel="noopener"
+                               class="inline-flex items-center justify-center gap-3 w-full bg-[#25D366] text-white px-6 py-4 rounded-xl font-bold hover:bg-[#20ba56] transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] shadow-md shadow-green-100">
+                                Hablar por WhatsApp (+56 9 8174 9481)
+                            </a>
+                            <span class="text-xs text-slate-400 block text-center mt-2">Atención de Lunes a Viernes</span>
+                        </div>
+                    </div>
+
+                    <!-- Right: Form -->
+                    <div class="lg:col-span-6 bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                        <h3 class="text-lg font-bold text-slate-900 mb-4">O si prefieres, te contactamos nosotros</h3>
+                        <form id="leadForm" class="space-y-4" onsubmit="handleFormSubmit(event)">
+                            <div>
+                                <label for="form-name" class="block text-xs font-semibold text-slate-600 mb-1">Nombre completo</label>
+                                <input type="text" id="form-name" required placeholder="Tu nombre" 
+                                       class="w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 transition-all">
+                            </div>
+
+                            <div>
+                                <label for="form-email" class="block text-xs font-semibold text-slate-600 mb-1">Correo electrónico</label>
+                                <input type="email" id="form-email" required placeholder="correo@empresa.com" 
+                                       class="w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 transition-all">
+                            </div>
+
+                            <div>
+                                <label for="form-phone" class="block text-xs font-semibold text-slate-600 mb-1">WhatsApp de contacto con código de país</label>
+                                <input type="tel" id="form-phone" required placeholder="+56 / +52 / +57 / +51 / +593..." 
+                                       class="w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 transition-all">
+                            </div>
+
+                            <div>
+                                <label for="form-industry" class="block text-xs font-semibold text-slate-600 mb-1">Tu sector / industria</label>
+                                <select id="form-industry" required class="w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 transition-all">
+                                    <option value="" disabled selected>Selecciona tu rubro</option>
+                                    <option value="estetica">Salones de Belleza y Estética</option>
+                                    <option value="automotriz">Talleres Mecánicos</option>
+                                    <option value="inmobiliaria">Proyectos Inmobiliarios</option>
+                                    <option value="ecommerce">E-commerce y Retail</option>
+                                    <option value="salud">Consultorios Médicos/Dentales</option>
+                                    <option value="independiente">Profesional Independiente</option>
+                                    <option value="otro">Otro sector</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" 
+                                    class="w-full bg-red-600 text-white px-6 py-4 rounded-xl font-bold hover:bg-red-700 transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] shadow-md shadow-red-600/20 mt-6">
+                                Solicitar diagnóstico
+                            </button>
+                        </form>
+                        <div id="formSuccess" class="hidden text-center py-8 text-emerald-600 font-semibold text-sm space-y-2">
+                            <p class="text-base font-bold text-slate-900">¡Diagnóstico Solicitado con Éxito!</p>
+                            <p class="text-slate-600">Hemos recibido tu solicitud. Te contactaremos dentro de las próximas 24 horas hábiles desde <strong>contacto@stratafactory.cl</strong> o vía WhatsApp.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-slate-900 text-white pt-20 pb-10 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-16 border-b border-slate-800">
+                <div class="md:col-span-5 space-y-4">
+                    <span class="text-2xl font-bold tracking-tight text-white block">
+                        Strata Factory
+                    </span>
+                    <p class="text-slate-400 text-sm max-w-sm leading-relaxed">
+                        Digitalizando negocios. Construyendo soluciones a medida de cada cliente.
+                    </p>
+                </div>
+
+                <div class="md:col-span-4 space-y-4">
+                    <h4 class="font-bold text-slate-200 text-sm">Contacto Directo</h4>
+                    <ul class="space-y-2 text-slate-400 text-sm">
+                        <li>
+                            <a href="mailto:contacto@stratafactory.cl" class="hover:text-emerald-400 transition-colors">
+                                contacto@stratafactory.cl
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/56981749481?text=Hola,%20quisiera%20más%20información%20sobre%20sus%20servicios%20de%20automatización." target="_blank" rel="noopener" class="hover:text-emerald-400 transition-colors">
+                                WhatsApp: +56 9 8174 9481
+                            </a>
+                        </li>
+                        <li class="text-xs text-slate-400">Cobertura: Chile, México, Colombia, Perú, Ecuador, Costa Rica, Panamá y LATAM</li>
+                    </ul>
+                </div>
+
+                <div class="md:col-span-3 space-y-4">
+                    <h4 class="font-bold text-slate-200 text-sm">Nosotros</h4>
+                    <ul class="space-y-2 text-slate-400 text-sm">
+                        <li><a href="#soluciones" class="hover:text-emerald-400 transition-colors">Soluciones</a></li>
+                        <li><a href="#contacto" class="hover:text-emerald-400 transition-colors">Contacto</a></li>
+                        <li class="text-xs text-slate-500 pt-2">© 2026 Strata Factory. Todos los derechos reservados.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+                <p>Desarrollado de forma personalizada según requerimientos corporativos específicos.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="hover:underline">Políticas de Privacidad</a>
+                    <span>|</span>
+                    <a href="#" class="hover:underline">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Form Interactivity Script -->
+    <script>
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('form-name').value;
+            const email = document.getElementById('form-email').value;
+            const phone = document.getElementById('form-phone').value;
+            const industry = document.getElementById('form-industry').value;
+
+            // Direct WhatsApp backup notification on submit
+            const message = `Hola Strata Factory, acabo de solicitar un diagnóstico desde la web:\n- Nombre: ${name}\n- Email: ${email}\n- WhatsApp: ${phone}\n- Industria: ${industry}`;
+            const waUrl = `https://wa.me/56981749481?text=${encodeURIComponent(message)}`;
+
+            document.getElementById('leadForm').classList.add('hidden');
+            const successContainer = document.getElementById('formSuccess');
+            successContainer.classList.remove('hidden');
+
+            // Open WhatsApp directly in new tab for instant engagement
+            setTimeout(() => {
+                window.open(waUrl, '_blank');
+            }, 800);
+        }
+    </script>
+</body>
+</html>
