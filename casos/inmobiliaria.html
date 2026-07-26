@@ -15,9 +15,34 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://stratafactory.cl/casos/inmobiliaria">
 
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Optimización de Postventa e Inspecciones en el Sector Inmobiliario",
+      "description": "Automatización de flujos con Agentes de IA para la recepción de observaciones, coordinación de contratistas y respaldo legal de actas de entrega.",
+      "author": {
+        "@type": "Organization",
+        "name": "Strata Factory"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Strata Factory",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://cdn.shopify.com/s/files/1/0773/9683/6592/files/ChatGPT_Image_24_jul_2026_07_30_05_p.m..png?v=1784938405"
+        }
+      }
+    }
+    </script>
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <script>
         tailwind.config = {
             theme: {
@@ -25,36 +50,35 @@
                     fontFamily: { sans: ['Inter', 'sans-serif'] },
                     colors: {
                         emerald: { 50: '#ecfdf5', 200: '#a7f3d0', 800: '#065f46' },
-                        red: { 600: '#dc2626', 700: '#b91c1c' }
+                        brand: { red: '#cc0000', darkRed: '#a80000' }
                     }
                 }
             }
         }
     </script>
 </head>
-<body class="bg-gray-100 text-gray-900 font-sans">
+<body class="bg-gray-100 text-gray-900 font-sans selection:bg-red-600 selection:text-white">
 
-    <!-- Navigation -->
     <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200">
-        <div class="max-w-7xl mx-auto px-6 h-20 md:h-24 flex items-center justify-between">
+        <div class="max-w-7xl mx-auto px-6 py-4 min-h-[100px] md:min-h-[120px] flex items-center justify-between">
             <a href="/" class="flex items-center gap-3">
                 <img src="https://cdn.shopify.com/s/files/1/0773/9683/6592/files/ChatGPT_Image_24_jul_2026_07_30_05_p.m..png?v=1784938405" 
                      alt="Strata Factory Logo" 
-                     class="h-12 sm:h-14 md:h-16 w-auto object-contain">
+                     class="h-24 sm:h-28 md:h-32 w-auto object-contain">
             </a>
-            <a href="/#contacto" class="bg-red-600 text-white px-5 py-2.5 rounded-xl font-bold hover:bg-red-700 transition-all text-sm shadow-md shadow-red-600/20">
+            <a href="/#contacto" class="bg-[#cc0000] text-white px-5 py-2.5 rounded-xl font-bold hover:bg-red-700 transition-all text-sm shadow-md shadow-red-600/20">
                 Iniciar Diagnóstico
             </a>
         </div>
     </nav>
 
-    <!-- Header -->
     <header class="py-16 md:py-24 px-6 bg-white border-b border-gray-200">
         <div class="max-w-4xl mx-auto">
-            <a href="/#casos" class="inline-flex items-center gap-2 text-xs font-bold text-red-600 uppercase tracking-wider mb-6 hover:underline">
-                ← Volver a Casos de Aplicación
+            <a href="/#casos" class="inline-flex items-center gap-2 text-xs font-bold text-[#cc0000] uppercase tracking-wider mb-6 hover:underline">
+                <i class="fa-solid fa-arrow-left text-[10px]"></i>
+                <span>Volver a Casos de Aplicación</span>
             </a>
-            <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 tracking-tight leading-tight mb-6">
+            <h1 class="text-3xl md:text-5xl font-black text-gray-900 tracking-tight leading-tight mb-6">
                 Optimización de Postventa e Inspecciones en el Sector Inmobiliario
             </h1>
             <p class="text-lg md:text-xl text-gray-600 leading-relaxed">
@@ -63,7 +87,6 @@
         </div>
     </header>
 
-    <!-- Content -->
     <main class="py-16 px-6 max-w-4xl mx-auto space-y-12">
         
         <!-- Section 1 -->
@@ -86,7 +109,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4">
                 <div class="bg-gray-50 p-4 rounded-xl border border-gray-200">
-                    <span class="text-red-600 font-bold text-sm block mb-1">01. Recepción IA</span>
+                    <span class="text-[#cc0000] font-bold text-sm block mb-1">01. Recepción IA</span>
                     <p class="text-xs text-gray-600">Propietario sube fotos por WhatsApp. La IA clasifica la especialidad automáticamente.</p>
                 </div>
                 <div class="bg-gray-50 p-4 rounded-xl border border-gray-200">
@@ -94,7 +117,7 @@
                     <p class="text-xs text-gray-600">Se notifica al contratista con plazo de SLA contractual prefijado.</p>
                 </div>
                 <div class="bg-gray-50 p-4 rounded-xl border border-gray-200">
-                    <span class="text-red-600 font-bold text-sm block mb-1">03. Cierre con Respaldo</span>
+                    <span class="text-[#cc0000] font-bold text-sm block mb-1">03. Cierre con Respaldo</span>
                     <p class="text-xs text-gray-600">Firma digital de conformidad del cliente y almacenamiento auditable.</p>
                 </div>
             </div>
@@ -118,14 +141,13 @@
         <!-- CTA Final -->
         <div class="bg-white p-8 rounded-3xl border border-gray-200 text-center space-y-6 shadow-sm">
             <h3 class="text-xl font-bold text-gray-900">¿Quieres aplicar este modelo en tu empresa inmobiliaria?</h3>
-            <a href="/#contacto" class="inline-block bg-red-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-red-700 transition-all text-sm shadow-md shadow-red-600/20">
+            <a href="/#contacto" class="inline-block bg-[#cc0000] text-white px-8 py-4 rounded-xl font-bold hover:bg-red-700 transition-all text-sm shadow-md shadow-red-600/20">
                 Solicitar Diagnóstico para Inmobiliarias
             </a>
         </div>
 
     </main>
 
-    <!-- Footer -->
     <footer class="bg-white text-gray-600 py-12 border-t border-gray-200">
         <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-xs">
             <div class="flex flex-col items-center md:items-start gap-2">
@@ -133,6 +155,11 @@
                      alt="Strata Factory Logo" 
                      class="h-10 md:h-12 w-auto object-contain">
                 <p class="text-gray-500">Firma de Ingeniería de Workflows e Inteligencia Artificial Operativa.</p>
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="mailto:contacto@stratafactory.cl" class="hover:text-red-600 transition-colors">contacto@stratafactory.cl</a>
+                <span>•</span>
+                <a href="https://wa.me/56981749481" class="hover:text-red-600 transition-colors">+56 9 8174 9481</a>
             </div>
             <div class="text-gray-500">
                 © 2026 Strata Factory. Todos los derechos reservados.
