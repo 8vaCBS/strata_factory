@@ -582,21 +582,59 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-white text-gray-600 py-12 border-t border-gray-200">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-xs">
-            <div class="flex flex-col items-center md:items-start gap-2">
-                <img src="https://cdn.shopify.com/s/files/1/0773/9683/6592/files/ChatGPT_Image_24_jul_2026_07_30_05_p.m..png?v=1784938405" 
-                     alt="Strata Factory Logo" 
-                     class="h-10 md:h-12 w-auto object-contain">
-                <p class="text-gray-500">Firma de Ingeniería de Workflows e Inteligencia Artificial Operativa.</p>
+    <footer class="bg-white text-gray-600 pt-16 pb-12 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-6 space-y-10">
+            <!-- Top Section Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center justify-between">
+                
+                <!-- Strata Factory Logo & Brief -->
+                <div class="md:col-span-5 space-y-3">
+                    <a href="#">
+                        <img src="https://cdn.shopify.com/s/files/1/0773/9683/6592/files/ChatGPT_Image_24_jul_2026_07_30_05_p.m..png?v=1784938405" 
+                             alt="Strata Factory Logo" 
+                             class="h-20 sm:h-24 w-auto object-contain">
+                    </a>
+                    <p class="text-xs text-gray-500 max-w-sm leading-relaxed">
+                        Firma de Ingeniería de Workflows e Inteligencia Artificial Operativa.
+                    </p>
+                </div>
+
+                <!-- Ecosystem Partner: BG Administradora -->
+                <div class="md:col-span-4 flex flex-col items-start space-y-2.5">
+                    <span class="text-[10px] uppercase font-extrabold text-gray-400 tracking-wider">Ecosistema & Empresa Aliada</span>
+                    <a href="https://www.bgadministradora.cl" target="_blank" rel="noopener" class="flex items-center gap-4 group transition-all">
+                        <img src="https://cdn.shopify.com/s/files/1/0773/9683/6592/files/51b3a483-adfd-4e74-9a03-7843895f04e7.jpg?v=1784930965" 
+                             alt="BG Administradora Inmobiliaria Logo" 
+                             class="h-32 sm:h-40 w-auto object-contain rounded-lg transition-transform group-hover:scale-105">
+                        <div class="flex flex-col">
+                            <span class="text-sm font-bold text-gray-900 group-hover:text-[#cc0000] transition-colors flex items-center gap-1.5">
+                                BG Administradora
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-gray-400 group-hover:text-[#cc0000]"></i>
+                            </span>
+                            <span class="text-xs text-gray-500">Gestión e Inversión Inmobiliaria</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Direct Contact -->
+                <div class="md:col-span-3 flex flex-col md:items-end text-xs space-y-2">
+                    <span class="text-[10px] uppercase font-extrabold text-gray-400 tracking-wider">Contacto Inmediato</span>
+                    <a href="mailto:contacto@stratafactory.cl" class="font-semibold text-gray-700 hover:text-[#cc0000] transition-colors flex items-center gap-2">
+                        <i class="fa-regular fa-envelope text-gray-400"></i> contacto@stratafactory.cl
+                    </a>
+                    <a href="https://wa.me/56981749481" target="_blank" rel="noopener" class="font-semibold text-gray-700 hover:text-[#cc0000] transition-colors flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-emerald-600"></i> +56 9 8174 9481
+                    </a>
+                </div>
+
             </div>
-            <div class="flex items-center gap-6">
-                <a href="mailto:contacto@stratafactory.cl" class="hover:text-red-600 transition-colors">contacto@stratafactory.cl</a>
-                <span>•</span>
-                <a href="https://wa.me/56981749481" class="hover:text-red-600 transition-colors">+56 9 8174 9481</a>
-            </div>
-            <div class="text-gray-500">
-                © 2026 Strata Factory. Todos los derechos reservados.
+
+            <!-- Bottom Bar -->
+            <div class="pt-8 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
+                <p>© 2026 Strata Factory. Todos los derechos reservados.</p>
+                <div class="flex items-center gap-2 text-[11px] font-medium text-gray-500">
+                    <i class="fa-solid fa-earth-americas text-gray-400"></i> Cobertura Operativa en Latinoamérica
+                </div>
             </div>
         </div>
     </footer>
