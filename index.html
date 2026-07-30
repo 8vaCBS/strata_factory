@@ -141,11 +141,10 @@
 </head>
 <body class="bg-gray-100 text-gray-900 selection:bg-red-600 selection:text-white">
 
-    <!-- NAV: Contenedor con altura ideal para un logo de gran presencia visual -->
     <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200">
         <div class="max-w-7xl mx-auto px-6 h-24 md:h-28 flex items-center justify-between">
             <a href="#" class="block flex items-center -ml-4 md:-ml-8">
-                <!-- LOGO HEADER: Escalado agresivamente para neutralizar los márgenes vacíos del archivo original -->
+                <!-- LOGO HEADER: Escalado estable para contrarrestar bordes transparentes del archivo original -->
                 <img src="https://cdn.shopify.com/s/files/1/0773/9683/6592/files/ChatGPT_Image_24_jul_2026_07_28_02_p.m..png?v=1784938405" 
                      alt="Strata Factory Logo" 
                      class="w-auto object-contain transition-all"
@@ -388,7 +387,7 @@
                 <!-- Left Info -->
                 <div class="lg:col-span-6 space-y-6">
                     <span class="text-red-600 font-bold uppercase tracking-wider text-xs">Atención Directa B2B</span>
-                    <h2 class="text-3xl font-extrabold text-gray-900 tracking-tight leading-tight">Evaluemos la eficiencia de tu operación</h2>
+                    <h2 class="text-3xl font-extrabold text-gray-900 tracking-tight leading-tight">Evaluemos la eficiencia de tu operation</h2>
                     <p class="text-gray-600 text-sm leading-relaxed">
                         Agenda una sesión de diagnóstico de 30 minutos sin costo. Analizaremos la arquitectura actual de tus procesos y calcularemos el potencial de ahorro de tiempo y costos con IA en Chile, México, Colombia, Perú, Ecuador, Costa Rica o Panamá.
                     </p>
@@ -455,24 +454,44 @@
         </div>
     </section>
 
-    <footer class="bg-white text-gray-600 py-12 border-t border-gray-200">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-xs">
-            <div class="flex flex-col items-center md:items-start gap-2">
-                <!-- LOGO FOOTER: Escalado estricto adaptado a la firma -->
-                <img src="https://cdn.shopify.com/s/files/1/0773/9683/6592/files/ChatGPT_Image_24_jul_2026_07_28_02_p.m..png?v=1784938405" 
-                     alt="Strata Factory Logo" 
-                     class="w-auto object-contain"
-                     style="height: 90px !important; min-height: 90px !important;">
-                <p class="text-gray-500 mt-2">Firma de Ingeniería de Workflows, Agencia de IA & Consultora Operativa.</p>
+    <!-- FOOTER: Estructura modular en bloques limpios independientes para asegurar escala y alineación perfectas -->
+    <footer class="bg-white text-gray-600 py-16 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-6 space-y-12">
+            
+            <!-- Bloque Superior: Logo + Descripción sin interferencia lateral -->
+            <div class="flex flex-col items-center md:items-start space-y-4">
+                <a href="#" class="block -ml-4 md:-ml-6">
+                    <!-- LOGO FOOTER: Escalado al doble con estilo inline estricto y seguro -->
+                    <img src="https://cdn.shopify.com/s/files/1/0773/9683/6592/files/ChatGPT_Image_24_jul_2026_07_28_02_p.m..png?v=1784938405" 
+                         alt="Strata Factory Logo" 
+                         class="w-auto object-contain transition-all"
+                         style="height: 140px !important; min-height: 140px !important; max-height: 150px !important;">
+                </a>
+                <p class="text-gray-500 font-medium text-sm text-center md:text-left max-w-xl">
+                    Firma de Ingeniería de Workflows, Agencia de IA & Consultora Operativa.
+                </p>
             </div>
-            <div class="flex items-center gap-6">
-                <a href="mailto:contacto@stratafactory.cl" class="hover:text-red-600 transition-colors">contacto@stratafactory.cl</a>
-                <span>•</span>
-                <a href="https://wa.me/56981749481" class="hover:text-red-600 transition-colors">+56 9 8174 9481</a>
+
+            <!-- Separador limpio -->
+            <div class="border-t border-gray-100 w-full pt-8">
+                <!-- Bloque Inferior: Contacto y Copyright distribuidos simétricamente en los extremos -->
+                <div class="flex flex-col md:flex-row items-center justify-between gap-6 text-xs font-medium text-gray-500">
+                    
+                    <!-- Canales de Contacto Informativos -->
+                    <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
+                        <a href="mailto:contacto@stratafactory.cl" class="text-gray-700 hover:text-red-600 font-semibold transition-colors">contacto@stratafactory.cl</a>
+                        <span class="hidden sm:inline text-gray-300">•</span>
+                        <a href="https://wa.me/56981749481" class="text-gray-700 hover:text-red-600 font-semibold transition-colors">+56 9 8174 9481</a>
+                    </div>
+                    
+                    <!-- Copyright Final -->
+                    <div class="text-gray-400">
+                        © 2026 Strata Factory. Todos los derechos reservados.
+                    </div>
+                    
+                </div>
             </div>
-            <div class="text-gray-500">
-                © 2026 Strata Factory. Todos los derechos reservados.
-            </div>
+            
         </div>
     </footer>
 
