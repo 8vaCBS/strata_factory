@@ -1,519 +1,452 @@
 <!DOCTYPE html>
 <html lang="es-CL" class="scroll-smooth">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatización con IA para Empresas en Chile y LATAM | Strata Factory</title>
+    <meta name="description" content="Automatizamos WhatsApp, cobranza, inventario y postventa con agentes de IA integrados a tus sistemas actuales. Diagnóstico de 30 minutos sin costo. Santiago, Chile · LATAM.">
+    <meta name="author" content="Strata Factory">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="theme-color" content="#cc0000">
+    <link rel="canonical" href="https://stratafactory.cl/">
+    <link rel="alternate" hreflang="es-CL" href="https://stratafactory.cl/">
+    <link rel="alternate" hreflang="x-default" href="https://stratafactory.cl/">
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/favicon.png">
+
+    <meta name="google-site-verification" content="p4IOxsoqqkGWL_Yt-hknPLWVNMkaUzTZ7UmfvjZakB8" />
+
+    <!-- Geo -->
+    <meta name="geo.region" content="CL-RM">
+    <meta name="geo.placename" content="Santiago">
+    <meta name="geo.position" content="-33.448889;-70.669265">
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Strata Factory">
+    <meta property="og:url" content="https://stratafactory.cl/">
+    <meta property="og:title" content="Automatización con IA para empresas en Chile y LATAM | Strata Factory">
+    <meta property="og:description" content="Agentes de IA y workflows integrados a tus sistemas actuales. Diagnóstico de 30 minutos sin costo.">
+    <meta property="og:image" content="https://stratafactory.cl/assets/og.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="es_CL">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Automatización con IA para empresas en Chile y LATAM | Strata Factory">
+    <meta name="twitter:description" content="Agentes de IA y workflows integrados a tus sistemas actuales. Diagnóstico sin costo.">
+    <meta name="twitter:image" content="https://stratafactory.cl/assets/og.jpg">
+
+    <!-- Schema.org: entidad, servicios y FAQ (GEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": ["ProfessionalService", "Organization"],
+          "@id": "https://stratafactory.cl/#org",
+          "name": "Strata Factory",
+          "alternateName": "Strata Factory Ingeniería de IA",
+          "url": "https://stratafactory.cl/",
+          "logo": "https://stratafactory.cl/assets/favicon.png",
+          "image": "https://stratafactory.cl/assets/og.jpg",
+          "description": "Firma de ingeniería de workflows y agentes de inteligencia artificial para automatizar procesos operativos (atención por WhatsApp, finanzas administrativas, inventario y postventa) en empresas de Chile y Latinoamérica.",
+          "email": "contacto@stratafactory.cl",
+          "telephone": "+56981749481",
+          "address": { "@type": "PostalAddress", "addressLocality": "Santiago", "addressRegion": "Región Metropolitana", "addressCountry": "CL" },
+          "geo": { "@type": "GeoCoordinates", "latitude": -33.448889, "longitude": -70.669265 },
+          "areaServed": [
+            {"@type":"Country","name":"Chile"},{"@type":"Country","name":"México"},{"@type":"Country","name":"Colombia"},
+            {"@type":"Country","name":"Perú"},{"@type":"Country","name":"Ecuador"},{"@type":"Country","name":"Costa Rica"},{"@type":"Country","name":"Panamá"}
+          ],
+          "knowsAbout": ["Automatización de procesos con IA","Agentes de IA en WhatsApp","Integración de ERP y CRM","Sincronización de inventario multicanal","Postventa inmobiliaria","Agendamiento automatizado en salud"],
+          "contactPoint": { "@type": "ContactPoint", "contactType": "sales", "telephone": "+56981749481", "email": "contacto@stratafactory.cl", "availableLanguage": "es", "areaServed": ["CL","MX","CO","PE","EC","CR","PA"] },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Capacidades de automatización",
+            "itemListElement": [
+              {"@type":"Offer","itemOffered":{"@type":"Service","name":"Agentes de IA para atención comercial y WhatsApp","url":"https://stratafactory.cl/#capacidades"}},
+              {"@type":"Offer","itemOffered":{"@type":"Service","name":"Automatización de workflows financieros y administrativos","url":"https://stratafactory.cl/#capacidades"}},
+              {"@type":"Offer","itemOffered":{"@type":"Service","name":"Sincronización de inventarios y operaciones","url":"https://stratafactory.cl/casos/ecommerce"}},
+              {"@type":"Offer","itemOffered":{"@type":"Service","name":"Trazabilidad y postventa con respaldo documental","url":"https://stratafactory.cl/casos/inmobiliaria"}}
+            ]
+          }
+        },
+        { "@type": "WebSite", "@id": "https://stratafactory.cl/#site", "url": "https://stratafactory.cl/", "name": "Strata Factory", "inLanguage": "es-CL", "publisher": {"@id": "https://stratafactory.cl/#org"} },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {"@type":"Question","name":"¿Qué hace Strata Factory?","acceptedAnswer":{"@type":"Answer","text":"Strata Factory diseña e implementa agentes de IA y workflows que reemplazan tareas manuales repetitivas (atención por WhatsApp, conciliación administrativa, sincronización de inventario y seguimiento de postventa), integrándose con los sistemas que la empresa ya usa."}},
+            {"@type":"Question","name":"¿Necesito cambiar mi ERP, CRM o software actual?","acceptedAnswer":{"@type":"Answer","text":"No. Las automatizaciones se conectan por API o integraciones a tus plataformas existentes (por ejemplo Shopify, MercadoLibre, operadores logísticos, calendarios o CRM). En el diagnóstico verificamos qué sistemas tienes y cómo se conectan."}},
+            {"@type":"Question","name":"¿Cuánto cuesta automatizar un proceso con IA?","acceptedAnswer":{"@type":"Answer","text":"Depende del alcance, del número de sistemas a integrar y del volumen de operación. El diagnóstico inicial de 30 minutos no tiene costo y termina con una propuesta acotada para el proceso que más tiempo consume."}},
+            {"@type":"Question","name":"¿Cuánto demora una implementación?","acceptedAnswer":{"@type":"Answer","text":"Varía según la complejidad. Trabajamos por etapas (diagnóstico, diseño, integración y despliegue) y el plazo estimado se define por escrito en la propuesta, después de revisar tu operación."}},
+            {"@type":"Question","name":"¿Cómo se mide el ahorro?","acceptedAnswer":{"@type":"Answer","text":"Fijamos una línea base antes de construir (horas, errores, tiempos de respuesta) y medimos contra ella después del despliegue. Puedes estimar tu costo actual con la calculadora de esta página."}},
+            {"@type":"Question","name":"¿Trabajan con empresas fuera de Chile?","acceptedAnswer":{"@type":"Answer","text":"Sí. Atendemos empresas en Chile, México, Colombia, Perú, Ecuador, Costa Rica y Panamá, de forma remota."}}
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <!-- CSS compilado (Tailwind) y fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="image" href="/assets/logo.webp" type="image/webp">
+    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" media="print" onload="this.media='all'">
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-578XBGRQKM"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-578XBGRQKM');
     </script>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strata Factory | Empresa & Consultora de IA, Agencias de Automatización & Workflows en LATAM</title>
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://cdn.shopify.com/s/files/1/0773/9683/6592/files/ChatGPT_Image_24_jul_2026_07_28_02_p.m..png?v=1784938405">
-
-    <!-- Google Search Console Verification -->
-    <meta name="google-site-verification" content="p4IOxsoqqkGWL_Yt-hknPLWVNMkaUzTZ7UmfvjZakB8" />
-
-    <!-- SEO & GEO Meta Tags (Expanded for Latam B2B Search Engines & Generative AI) -->
-    <meta name="description" content="Strata Factory es una firma de ingeniería, agencia y consultora de IA operativa. Diseñamos e implementamos sistemas de automatización de procesos, agentes de IA y workflows a medida para empresas en Chile, México, Colombia, Perú y LATAM.">
-    <meta name="keywords" content="empresa de automatizacion con ia latam, agencias de inteligencia artificial para negocios chile mexico colombia peru, consultoras de eficiencia operativa ia, proveedores de agentes de ia b2b, desarrollo de workflows a medida, firma de ingenieria de software operativos, strata factory">
-    <meta name="author" content="Strata Factory">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <link rel="canonical" href="https://stratafactory.cl/">
-    
-    <!-- Geo Target Meta Tags -->
-    <meta name="geo.region" content="CL-RM">
-    <meta name="geo.placename" content="Santiago">
-    <meta name="geo.position" content="-33.448889;-70.669265">
-    <meta name="ICBM" content="-33.448889, -70.669265">
-
-    <!-- Open Graph / Social Media Preview -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://stratafactory.cl/">
-    <meta property="og:title" content="Strata Factory | Consultoría, Agencia & Ingeniería de IA Operativa LATAM">
-    <meta property="og:description" content="Empresa especialista en la eliminación de costos operativos y optimización de flujos mediante agentes de IA e integración de sistemas para empresas en Latinoamérica.">
-    <meta property="og:image" content="https://cdn.shopify.com/s/files/1/0773/9683/6592/files/ChatGPT_Image_24_jul_2026_07_28_02_p.m..png?v=1784938405">
-    <meta property="og:locale" content="es_CL">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Strata Factory | Agencia & Consultora de IA en Latinoamérica">
-    <meta name="twitter:description" content="Soluciones de IA e integración de procesos B2B en Chile, México, Colombia, Perú y región LATAM.">
-
-    <!-- Schema.org JSON-LD (Generative Engine Optimization & Entity Graphing) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Strata Factory",
-      "alternateName": [
-        "Strata Factory AI",
-        "Strata Factory Agencia de IA",
-        "Strata Factory Consultoría en Automatización",
-        "Strata Factory Firma de Ingeniería"
-      ],
-      "url": "https://stratafactory.cl",
-      "logo": "https://cdn.shopify.com/s/files/1/0773/9683/6592/files/ChatGPT_Image_24_jul_2026_07_28_02_p.m..png?v=1784938405",
-      "image": "https://cdn.shopify.com/s/files/1/0773/9683/6592/files/ChatGPT_Image_24_jul_2026_07_28_02_p.m..png?v=1784938405",
-      "description": "Firma de ingeniería, agencia de automatización y consultora tecnológica especializada en arquitecturas de workflows con Inteligencia Artificial, reducción de costos operativos e integración de sistemas B2B para Latinoamérica.",
-      "email": "contacto@stratafactory.cl",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Santiago",
-        "addressRegion": "Región Metropolitana",
-        "addressCountry": "CL"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "-33.448889",
-        "longitude": "-70.669265"
-      },
-      "areaServed": [
-        "Chile", 
-        "México", 
-        "Colombia", 
-        "Perú", 
-        "Ecuador", 
-        "Costa Rica", 
-        "Panamá", 
-        "Latinoamérica",
-        "LATAM"
-      ],
-      "serviceType": [
-        "Empresa de Automatización de Procesos con IA",
-        "Agencia de Inteligencia Artificial para Negocios",
-        "Consultora de Eficiencia Operativa & Transformación Digital",
-        "Proveedor de Soluciones e Integración de Sistemas B2B",
-        "Firma de Ingeniería de Workflows y Agentes de IA"
-      ],
-      "knowsAbout": [
-        "Ingeniería de Workflows con IA",
-        "Agentes de Inteligencia Artificial Operativos",
-        "Reducción de Costos Operativos B2B",
-        "Automatización de Procesos Críticos",
-        "Integración de Sistemas ERP CRM",
-        "Consultoría Tecnológica para PYMEs y Corporativos"
-      ]
-    }
-    </script>
-
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                    colors: {
-                        emerald: {
-                            50: '#ecfdf5',
-                            100: '#d1fae5',
-                            200: '#a7f3d0',
-                            700: '#047857',
-                            800: '#065f46',
-                            900: '#064e3b',
-                        },
-                        red: {
-                            50: '#fef2f2',
-                            500: '#ef4444',
-                            600: '#dc2626',
-                            700: '#b91c1c',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-    </style>
 </head>
-<body class="bg-gray-100 text-gray-900 selection:bg-red-600 selection:text-white">
+<body class="bg-gray-100 text-gray-900 pb-24 md:pb-0 selection:bg-brand selection:text-white">
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:z-[60] focus:bg-white focus:p-3">Saltar al contenido</a>
 
-    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200">
-        <div class="max-w-7xl mx-auto px-6 h-24 md:h-28 flex items-center justify-between">
-            <a href="#" class="block flex items-center -ml-4 md:-ml-8">
-                <!-- LOGO HEADER: Escalado estable para contrarrestar bordes transparentes del archivo original -->
-                <img src="https://cdn.shopify.com/s/files/1/0773/9683/6592/files/ChatGPT_Image_24_jul_2026_07_28_02_p.m..png?v=1784938405" 
-                     alt="Strata Factory Logo" 
-                     class="w-auto object-contain transition-all"
-                     style="height: 140px !important; min-height: 140px !important; max-height: 160px !important;">
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200" aria-label="Principal">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 h-16 md:h-20 flex items-center justify-between gap-3">
+            <a href="/" class="flex items-center" aria-label="Strata Factory — inicio">
+                <img src="/assets/logo.webp" width="410" height="112" alt="Strata Factory" class="h-10 md:h-14 w-auto" fetchpriority="high">
             </a>
             <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-gray-700">
-                <a href="#arquitectura" class="hover:text-red-600 transition-colors">Capacidades Técnicas</a>
-                <a href="#casos" class="hover:text-red-600 transition-colors">Casos de Aplicación</a>
-                <a href="#metodologia" class="hover:text-red-600 transition-colors">Metodología</a>
+                <a href="#por-que" class="hover:text-brand">Por qué confiar</a>
+                <a href="#capacidades" class="hover:text-brand">Servicios</a>
+                <a href="#casos" class="hover:text-brand">Casos</a>
+                <a href="#faq" class="hover:text-brand">Preguntas</a>
             </div>
-            <a href="#contacto" class="bg-red-600 text-white px-5 py-2.5 rounded-xl font-bold hover:bg-red-700 transition-all text-sm shadow-md shadow-red-600/20">
-                Iniciar Diagnóstico
+            <a href="#contacto" data-track="cta_click" data-loc="nav" class="bg-brand text-white px-4 py-2.5 rounded-xl font-bold hover:bg-brand-dark text-sm whitespace-nowrap">
+                Diagnóstico gratis
             </a>
         </div>
     </nav>
 
-    <header class="py-20 md:py-28 px-6 bg-white relative overflow-hidden border-b border-gray-200">
-        <div class="absolute inset-0 opacity-25 bg-[radial-gradient(#94a3b8_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none"></div>
-
-        <div class="max-w-5xl mx-auto text-center relative z-10">
-            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 border border-gray-200 text-gray-800 text-xs font-semibold tracking-wide uppercase mb-8">
-                <span class="w-2 h-2 rounded-full bg-red-600 animate-pulse"></span>
-                Ingeniería, Agencia & Consultoría de IA • Chile & LATAM
-            </div>
-            
-            <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 tracking-tight leading-tight mb-8">
-                Reducimos costos y tiempos operativos diseñando <span class="bg-gradient-to-r from-red-600 to-gray-900 bg-clip-text text-transparent">arquitecturas de IA a medida</span>.
+    <main id="main">
+    <header class="py-12 md:py-24 px-4 md:px-6 bg-white relative overflow-hidden border-b border-gray-200">
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <p class="inline-block px-3 py-1.5 rounded-full bg-gray-100 border border-gray-200 text-gray-800 text-xs font-semibold tracking-wide uppercase mb-6">
+                Automatización con IA · Chile &amp; LATAM
+            </p>
+            <h1 class="text-3xl sm:text-4xl md:text-6xl font-extrabold text-gray-900 tracking-tight leading-tight mb-5">
+                Recupera horas de tu equipo automatizando <span class="text-brand">WhatsApp, cobranza e inventario</span> con IA
             </h1>
-            
-            <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-12">
-                Reemplazamos tareas manuales repetitivas y licencias SaaS fragmentadas por flujos unificados de Inteligencia Artificial. Garantizamos precisión en tus procesos críticos sin cambiar tu forma de operar.
+            <p class="text-base md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed mb-8">
+                Conectamos agentes de IA a los sistemas que ya usas, sin cambiar tu forma de operar. Empezamos midiendo tu proceso actual, no vendiendo licencias.
             </p>
 
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
-                <a href="#contacto" class="w-full sm:w-auto bg-red-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-red-700 transition-all text-center shadow-lg shadow-red-600/25">
-                    Evaluar Potencial de Ahorro
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 max-w-md sm:max-w-none mx-auto">
+                <a href="https://wa.me/56981749481?text=Hola%20Strata%20Factory%2C%20quiero%20un%20diagn%C3%B3stico%20gratuito%20de%20automatizaci%C3%B3n%20con%20IA." target="_blank" rel="noopener"
+                   data-track="whatsapp_click" data-loc="hero"
+                   class="bg-[#128C4A] text-white px-7 py-4 rounded-xl font-bold hover:bg-[#0e7a40] text-center shadow-lg">
+                    Hablar por WhatsApp
                 </a>
-                <a href="#arquitectura" class="w-full sm:w-auto bg-gray-100 text-gray-800 border border-gray-300 px-8 py-4 rounded-xl font-semibold hover:bg-gray-200 transition-all text-center">
-                    Ver Núcleo Tecnológico
+                <a href="#calculadora" data-track="cta_click" data-loc="hero_calc"
+                   class="bg-white text-gray-900 border-2 border-gray-300 px-7 py-4 rounded-xl font-semibold hover:border-gray-900 text-center">
+                    Calcular cuánto me cuesta hoy
                 </a>
             </div>
 
-            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 pt-12 border-t border-gray-200 text-left">
-                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200">
-                    <span class="text-3xl font-extrabold text-red-600">Hasta 60%</span>
-                    <p class="text-xs text-gray-600 font-medium mt-1">Reducción en tiempo de ejecución de procesos manuales.</p>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200">
-                    <span class="text-3xl font-extrabold text-gray-900">100%</span>
-                    <p class="text-xs text-gray-600 font-medium mt-1">Compatibilidad: Integración con tu infraestructura actual.</p>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200">
-                    <span class="text-3xl font-extrabold text-red-600">24 / 7</span>
-                    <p class="text-xs text-gray-600 font-medium mt-1">Agentes de IA ejecutando flujos sin interrupción operativa.</p>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200">
-                    <span class="text-3xl font-extrabold text-gray-900">ROI Directo</span>
-                    <p class="text-xs text-gray-600 font-medium mt-1">Eliminación de sobrecostos en licencias genéricas.</p>
-                </div>
-            </div>
+            <ul class="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-gray-700 font-medium">
+                <li>✓ Diagnóstico de 30 min sin costo</li>
+                <li>✓ Se integra a tus sistemas actuales</li>
+                <li>✓ Equipo en Santiago, Chile</li>
+            </ul>
         </div>
     </header>
 
-    <section id="arquitectura" class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="text-center max-w-3xl mx-auto mb-16">
-            <span class="text-red-600 font-bold uppercase tracking-wider text-xs">Núcleo Tecnológico Único</span>
-            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-2">Nuestras 4 Capacidades de Automatización</h2>
-            <p class="text-gray-600 mt-4 text-sm md:text-base">
-                No vendemos licencias sueltas. Diseñamos módulos de integración lógica adaptados a la estructura operativa de tu compañía.
-            </p>
+    <!-- RTB: razones para creer -->
+    <section id="por-que" class="py-14 md:py-24 px-4 md:px-6 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-10 md:mb-14">
+            <p class="text-brand font-bold uppercase tracking-wider text-xs">Por qué confiar en nosotros</p>
+            <h2 class="text-2xl md:text-4xl font-extrabold text-gray-900 mt-2">No prometemos ahorros: los medimos contigo</h2>
+            <p class="text-gray-600 mt-4 text-base">Cada afirmación de esta página se puede verificar en el diagnóstico. Así lo hacemos.</p>
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- Capacity 1 -->
-            <div class="bg-white border border-gray-200 p-8 rounded-3xl shadow-sm hover:shadow-md transition-all">
-                <div class="w-12 h-12 bg-black text-white rounded-2xl flex items-center justify-center font-extrabold text-lg mb-6 shadow-sm">
-                    01
-                </div>
-                <h3 class="text-xl font-bold text-gray-900 mb-3">Agentes de IA para Front-Office & Atención Comercial</h3>
-                <p class="text-gray-600 text-sm leading-relaxed mb-6">
-                    Sistemas conversacionales avanzados conectados a tus bases de datos centrales para calificar prospectos, agendar citas complejas y gestionar soporte en WhatsApp y correo sin la rigidez de los bots tradicionales.
-                </p>
-                <div class="text-xs text-emerald-800 font-semibold bg-emerald-50 px-3.5 py-2 rounded-xl border border-emerald-200 inline-block">
-                    Impacto: Respuesta inmediata 24/7 y filtrado comercial sin carga humana.
-                </div>
-            </div>
-
-            <!-- Capacity 2 -->
-            <div class="bg-white border border-gray-200 p-8 rounded-3xl shadow-sm hover:shadow-md transition-all">
-                <div class="w-12 h-12 bg-black text-white rounded-2xl flex items-center justify-center font-extrabold text-lg mb-6 shadow-sm">
-                    02
-                </div>
-                <h3 class="text-xl font-bold text-gray-900 mb-3">Orquestación de Workflows Financieros & Administrativos</h3>
-                <p class="text-gray-600 text-sm leading-relaxed mb-6">
-                    Automatización de la conciliación de datos, emisión de informes, trazabilidad de cobros y procesamiento de documentación contable eliminando la digitación manual y los errores en hojas de cálculo.
-                </p>
-                <div class="text-xs text-emerald-800 font-semibold bg-emerald-50 px-3.5 py-2 rounded-xl border border-emerald-200 inline-block">
-                    Impacto: Reducción del 80% en tiempo dedicado a tareas administrativas.
-                </div>
-            </div>
-
-            <!-- Capacity 3 -->
-            <div class="bg-white border border-gray-200 p-8 rounded-3xl shadow-sm hover:shadow-md transition-all">
-                <div class="w-12 h-12 bg-black text-white rounded-2xl flex items-center justify-center font-extrabold text-lg mb-6 shadow-sm">
-                    03
-                </div>
-                <h3 class="text-xl font-bold text-gray-900 mb-3">Sincronización Inteligente de Inventarios & Operaciones</h3>
-                <p class="text-gray-600 text-sm leading-relaxed mb-6">
-                    Integración de plataformas de venta multicanal, ERPs y depósitos logísticos mediante reglas de negocio con IA para predecir quiebres de stock y auditar flujos físicos e informativos en tiempo real.
-                </p>
-                <div class="text-xs text-emerald-800 font-semibold bg-emerald-50 px-3.5 py-2 rounded-xl border border-emerald-200 inline-block">
-                    Impacto: Eliminación de discrepancias de inventario y sobrecostos logísticos.
-                </div>
-            </div>
-
-            <!-- Capacity 4 -->
-            <div class="bg-white border border-gray-200 p-8 rounded-3xl shadow-sm hover:shadow-md transition-all">
-                <div class="w-12 h-12 bg-black text-white rounded-2xl flex items-center justify-center font-extrabold text-lg mb-6 shadow-sm">
-                    04
-                </div>
-                <h3 class="text-xl font-bold text-gray-900 mb-3">Sistemas de Trazabilidad & Auditoría Legal / Postventa</h3>
-                <p class="text-gray-600 text-sm leading-relaxed mb-6">
-                    Flujos automatizados de recepción de tickets, fiscalización de compromisos contractuales y generación de actas respaldadas para proteger a la empresa ante contingencias operativas o legales.
-                </p>
-                <div class="text-xs text-emerald-800 font-semibold bg-emerald-50 px-3.5 py-2 rounded-xl border border-emerald-200 inline-block">
-                    Impacto: 100% de respaldo documental y orden jurídico en intervenciones.
-                </div>
-            </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+            <article class="bg-white border border-gray-200 p-6 rounded-2xl">
+                <p class="text-brand font-extrabold text-sm">1 · Línea base primero</p>
+                <h3 class="font-bold text-lg mt-2 mb-2">Medimos antes de construir</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">Registramos horas, errores y tiempos de respuesta actuales. Sin línea base no hay forma honesta de probar un ahorro.</p>
+            </article>
+            <article class="bg-white border border-gray-200 p-6 rounded-2xl">
+                <p class="text-brand font-extrabold text-sm">2 · Supuestos visibles</p>
+                <h3 class="font-bold text-lg mt-2 mb-2">Cálculo que puedes auditar</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">Nuestra calculadora usa tus números y un escenario de reducción que tú ajustas. Nada de porcentajes escondidos.</p>
+            </article>
+            <article class="bg-white border border-gray-200 p-6 rounded-2xl">
+                <p class="text-brand font-extrabold text-sm">3 · Tu stack, no el nuestro</p>
+                <h3 class="font-bold text-lg mt-2 mb-2">Integración con lo que ya usas</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">WhatsApp, Shopify, MercadoLibre, operadores logísticos, calendarios y CRM. Revisamos la conexión técnica antes de cotizar.</p>
+            </article>
+            <article class="bg-white border border-gray-200 p-6 rounded-2xl">
+                <p class="text-brand font-extrabold text-sm">4 · Todo queda registrado</p>
+                <h3 class="font-bold text-lg mt-2 mb-2">Trazabilidad por diseño</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">Cada acción del agente queda en un registro auditable, con respaldo documental cuando el proceso es legal o contractual.</p>
+            </article>
         </div>
     </section>
 
-    <section id="casos" class="py-24 bg-gray-100 border-t border-b border-gray-200 px-6">
+    <!-- Calculadora -->
+    <section id="calculadora" class="py-14 md:py-24 px-4 md:px-6 bg-white border-y border-gray-200">
+        <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+            <div>
+                <p class="text-brand font-bold uppercase tracking-wider text-xs">Calculadora</p>
+                <h2 class="text-2xl md:text-4xl font-extrabold text-gray-900 mt-2">¿Cuánto cuesta hoy una tarea manual en tu empresa?</h2>
+                <p class="text-gray-600 mt-4 text-base leading-relaxed">Ingresa cuánto tiempo dedica tu equipo a una tarea repetitiva (responder consultas, digitar, conciliar, coordinar). El costo mensual sale solo de tus datos; el ahorro depende del escenario que elijas.</p>
+            </div>
+            <form id="calc" class="bg-gray-50 border border-gray-200 rounded-2xl p-5 md:p-6 space-y-4" onsubmit="return false">
+                <div>
+                    <label for="c-personas" class="block text-sm font-semibold text-gray-700 mb-1">Personas que hacen la tarea</label>
+                    <input id="c-personas" type="number" inputmode="numeric" min="1" value="2" class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-base">
+                </div>
+                <div>
+                    <label for="c-horas" class="block text-sm font-semibold text-gray-700 mb-1">Horas por semana, por persona</label>
+                    <input id="c-horas" type="number" inputmode="decimal" min="0" value="10" class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-base">
+                </div>
+                <div>
+                    <label for="c-costo" class="block text-sm font-semibold text-gray-700 mb-1">Costo por hora (CLP, con cargas)</label>
+                    <input id="c-costo" type="number" inputmode="numeric" min="0" step="500" value="8000" class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-base">
+                </div>
+                <div>
+                    <label for="c-red" class="block text-sm font-semibold text-gray-700 mb-1">Escenario de reducción: <span id="c-red-val" class="text-brand">40%</span></label>
+                    <input id="c-red" type="range" min="10" max="80" step="5" value="40" class="w-full accent-[#cc0000]">
+                    <p class="text-xs text-gray-500 mt-1">Es un escenario, no una promesa. El porcentaje real se valida en el diagnóstico.</p>
+                </div>
+                <dl class="bg-white border border-gray-200 rounded-xl p-4 space-y-2 text-sm" aria-live="polite">
+                    <div class="flex justify-between gap-4"><dt class="text-gray-600">Costo mensual de la tarea manual</dt><dd id="c-mensual" class="font-bold">—</dd></div>
+                    <div class="flex justify-between gap-4"><dt class="text-gray-600">Ahorro mensual en tu escenario</dt><dd id="c-ahorro" class="font-bold text-brand">—</dd></div>
+                    <div class="flex justify-between gap-4"><dt class="text-gray-600">Ahorro anual en tu escenario</dt><dd id="c-anual" class="font-bold">—</dd></div>
+                </dl>
+                <a id="c-cta" href="#" target="_blank" rel="noopener" data-track="whatsapp_click" data-loc="calculadora"
+                   class="block w-full text-center bg-brand text-white px-6 py-4 rounded-xl font-bold hover:bg-brand-dark">
+                    Validar este cálculo por WhatsApp
+                </a>
+            </form>
+        </div>
+    </section>
+
+    <section id="capacidades" class="py-14 md:py-24 px-4 md:px-6 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-10 md:mb-14">
+            <p class="text-brand font-bold uppercase tracking-wider text-xs">Servicios</p>
+            <h2 class="text-2xl md:text-4xl font-extrabold text-gray-900 mt-2">Qué automatizamos con IA</h2>
+            <p class="text-gray-600 mt-4 text-base">Módulos de integración adaptados a la operación de tu empresa, no licencias sueltas.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+            <article class="bg-white border border-gray-200 p-6 md:p-8 rounded-2xl">
+                <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-3">Agentes de IA para WhatsApp y atención comercial</h3>
+                <p class="text-gray-600 text-sm md:text-base leading-relaxed mb-4">Califican prospectos, agendan citas y responden soporte por WhatsApp y correo, conectados a tus bases de datos.</p>
+                <p class="text-sm text-emerald-800 font-semibold bg-emerald-50 px-3 py-2 rounded-xl border border-emerald-200">Qué cambia: respuesta inmediata 24/7 y filtrado comercial previo.</p>
+            </article>
+            <article class="bg-white border border-gray-200 p-6 md:p-8 rounded-2xl">
+                <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-3">Workflows financieros y administrativos</h3>
+                <p class="text-gray-600 text-sm md:text-base leading-relaxed mb-4">Conciliación de datos, informes, seguimiento de cobros y procesamiento de documentación contable sin digitación manual.</p>
+                <p class="text-sm text-emerald-800 font-semibold bg-emerald-50 px-3 py-2 rounded-xl border border-emerald-200">Qué cambia: menos errores en planillas y menos horas administrativas.</p>
+            </article>
+            <article class="bg-white border border-gray-200 p-6 md:p-8 rounded-2xl">
+                <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-3">Sincronización de inventarios y operaciones</h3>
+                <p class="text-gray-600 text-sm md:text-base leading-relaxed mb-4">Integra plataformas de venta, ERP y bodegas con reglas de negocio e IA para anticipar quiebres de stock.</p>
+                <p class="text-sm text-emerald-800 font-semibold bg-emerald-50 px-3 py-2 rounded-xl border border-emerald-200">Qué cambia: stock consistente entre canales.</p>
+            </article>
+            <article class="bg-white border border-gray-200 p-6 md:p-8 rounded-2xl">
+                <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-3">Trazabilidad, auditoría y postventa</h3>
+                <p class="text-gray-600 text-sm md:text-base leading-relaxed mb-4">Recepción de tickets, seguimiento de compromisos contractuales y actas con respaldo documental.</p>
+                <p class="text-sm text-emerald-800 font-semibold bg-emerald-50 px-3 py-2 rounded-xl border border-emerald-200">Qué cambia: cada intervención queda registrada y auditable.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="casos" class="py-14 md:py-24 bg-white border-y border-gray-200 px-4 md:px-6">
         <div class="max-w-7xl mx-auto">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-red-600 font-bold uppercase tracking-wider text-xs">Demostración Práctica</span>
-                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-2">Campos de Aplicación de Nuestra Metodología</h2>
-                <p class="text-gray-600 mt-4 text-sm">
-                    Nuestra arquitectura tecnológica es única. Su versatilidad le permite resolver cuellos de botella específicos en múltiples sectores de la economía.
-                </p>
+            <div class="text-center max-w-3xl mx-auto mb-10 md:mb-14">
+                <p class="text-brand font-bold uppercase tracking-wider text-xs">Casos de aplicación</p>
+                <h2 class="text-2xl md:text-4xl font-extrabold text-gray-900 mt-2">Así se ve en tu industria</h2>
+                <p class="text-gray-600 mt-4 text-base">Tres escenarios con su arquitectura y la forma de medir el resultado.</p>
             </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Case 1: Inmobiliaria -->
-                <div class="bg-white rounded-2xl border border-gray-200 p-6 flex flex-col justify-between shadow-sm hover:shadow-md transition-all">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
+                <article class="bg-gray-50 rounded-2xl border border-gray-200 p-6 flex flex-col justify-between">
                     <div>
-                        <span class="text-xs font-bold text-emerald-800 uppercase tracking-wider bg-emerald-50 border border-emerald-200 px-2.5 py-1 rounded-md">Desarrollo Propiedades & Postventa</span>
-                        <h3 class="text-lg font-bold text-gray-900 mt-4 mb-3">Sector Inmobiliario</h3>
-                        <p class="text-gray-600 text-xs leading-relaxed">
-                            Automatización del canal de recepción de observaciones de entrega, asignación a contratistas y seguimiento transparente de garantías con registro de respaldo.
-                        </p>
+                        <p class="text-xs font-bold text-emerald-800 uppercase tracking-wider">Inmobiliario · Postventa</p>
+                        <h3 class="text-lg font-bold text-gray-900 mt-3 mb-2">IA para postventa inmobiliaria</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Recepción de observaciones por WhatsApp, asignación a contratistas con plazo y acta digital de cierre.</p>
                     </div>
-                    <div class="mt-6 pt-4 border-t border-gray-100 space-y-4">
-                        <span class="text-xs text-gray-800 font-semibold block">Resultado: -60% tiempo de resolución y 0% fugas de respaldo.</span>
-                        <a href="/casos/inmobiliaria" 
-                           class="inline-flex items-center justify-center gap-2 w-full bg-red-600 text-white font-bold hover:bg-red-700 px-4 py-3 rounded-xl text-xs transition-all shadow-md shadow-red-600/20">
-                            <span>Ver Caso Técnico Completo</span>
-                            <span>→</span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Case 2: E-Commerce & Retail -->
-                <div class="bg-white rounded-2xl border border-gray-200 p-6 flex flex-col justify-between shadow-sm hover:shadow-md transition-all">
+                    <a href="/casos/inmobiliaria" data-track="case_click" data-loc="inmobiliaria" class="mt-6 block text-center bg-brand text-white font-bold hover:bg-brand-dark px-4 py-3 rounded-xl text-sm">Ver el caso →</a>
+                </article>
+                <article class="bg-gray-50 rounded-2xl border border-gray-200 p-6 flex flex-col justify-between">
                     <div>
-                        <span class="text-xs font-bold text-emerald-800 uppercase tracking-wider bg-emerald-50 border border-emerald-200 px-2.5 py-1 rounded-md">Comercio & Canales Digitales</span>
-                        <h3 class="text-lg font-bold text-gray-900 mt-4 mb-3">E-Commerce & Retail</h3>
-                        <p class="text-gray-600 text-xs leading-relaxed">
-                            Sincronización continua de inventario multicanal, automatización del procesamiento de órdenes y asistente de IA para estados de despacho.
-                        </p>
+                        <p class="text-xs font-bold text-emerald-800 uppercase tracking-wider">E-commerce · Retail</p>
+                        <h3 class="text-lg font-bold text-gray-900 mt-3 mb-2">Inventario multicanal sin descalces</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Stock sincronizado entre tiendas y marketplaces, y un agente que informa el estado de despacho.</p>
                     </div>
-                    <div class="mt-6 pt-4 border-t border-gray-100 space-y-4">
-                        <span class="text-xs text-gray-800 font-semibold block">Resultado: Eliminación total de ventas sin stock.</span>
-                        <a href="/casos/ecommerce" 
-                           class="inline-flex items-center justify-center gap-2 w-full bg-red-600 text-white font-bold hover:bg-red-700 px-4 py-3 rounded-xl text-xs transition-all shadow-md shadow-red-600/20">
-                            <span>Ver Caso Técnico Completo</span>
-                            <span>→</span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Case 3: Salud, Estética & Consultoría -->
-                <div class="bg-white rounded-2xl border border-gray-200 p-6 flex flex-col justify-between shadow-sm hover:shadow-md transition-all">
+                    <a href="/casos/ecommerce" data-track="case_click" data-loc="ecommerce" class="mt-6 block text-center bg-brand text-white font-bold hover:bg-brand-dark px-4 py-3 rounded-xl text-sm">Ver el caso →</a>
+                </article>
+                <article class="bg-gray-50 rounded-2xl border border-gray-200 p-6 flex flex-col justify-between">
                     <div>
-                        <span class="text-xs font-bold text-emerald-800 uppercase tracking-wider bg-emerald-50 border border-emerald-200 px-2.5 py-1 rounded-md">Salud, Estética & Servicios</span>
-                        <h3 class="text-lg font-bold text-gray-900 mt-4 mb-3">Salud, Estética & Consultoría</h3>
-                        <p class="text-gray-600 text-xs leading-relaxed">
-                            Agendamiento con IA conversacional, confirmación de asistencia automatizada y liquidación de comisiones de profesionales sin cálculos manuales.
-                        </p>
+                        <p class="text-xs font-bold text-emerald-800 uppercase tracking-wider">Salud · Estética · Servicios</p>
+                        <h3 class="text-lg font-bold text-gray-900 mt-3 mb-2">Agenda llena y comisiones sin planilla</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Agendamiento por WhatsApp, confirmación de asistencia y liquidación automática por profesional.</p>
                     </div>
-                    <div class="mt-6 pt-4 border-t border-gray-100 space-y-4">
-                        <span class="text-xs text-gray-800 font-semibold block">Resultado: +30% retención y cero horas perdidas en agenda.</span>
-                        <a href="/casos/salud" 
-                           class="inline-flex items-center justify-center gap-2 w-full bg-red-600 text-white font-bold hover:bg-red-700 px-4 py-3 rounded-xl text-xs transition-all shadow-md shadow-red-600/20">
-                            <span>Ver Caso Técnico Completo</span>
-                            <span>→</span>
-                        </a>
-                    </div>
-                </div>
+                    <a href="/casos/salud" data-track="case_click" data-loc="salud" class="mt-6 block text-center bg-brand text-white font-bold hover:bg-brand-dark px-4 py-3 rounded-xl text-sm">Ver el caso →</a>
+                </article>
             </div>
         </div>
     </section>
 
-    <section id="metodologia" class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="text-center max-w-3xl mx-auto mb-16">
-            <span class="text-red-600 font-bold uppercase tracking-wider text-xs">Rigor Técnico</span>
-            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-2">El Proceso de Ingeniería</h2>
-            <p class="text-gray-600 mt-4 text-sm">
-                Diseñamos e implementamos con metodologías ágiles para asegurar retorno de inversión medible sin paralizar la operación diaria.
-            </p>
+    <section id="metodologia" class="py-14 md:py-24 px-4 md:px-6 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-10 md:mb-14">
+            <p class="text-brand font-bold uppercase tracking-wider text-xs">Metodología</p>
+            <h2 class="text-2xl md:text-4xl font-extrabold text-gray-900 mt-2">Cómo trabajamos, paso a paso</h2>
         </div>
+        <ol class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+            <li class="bg-white p-6 rounded-2xl border border-gray-200">
+                <p class="text-brand font-extrabold">01 · Diagnóstico</p>
+                <h3 class="text-gray-900 font-bold mt-2 mb-2">Auditoría operativa</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">Ubicamos dónde se pierden horas y fijamos la línea base. Sin costo.</p>
+            </li>
+            <li class="bg-white p-6 rounded-2xl border border-gray-200">
+                <p class="text-brand font-extrabold">02 · Arquitectura</p>
+                <h3 class="text-gray-900 font-bold mt-2 mb-2">Diseño del workflow</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">Mapeamos flujos de datos y cómo el agente interactúa con tus sistemas. Propuesta y plazo por escrito.</p>
+            </li>
+            <li class="bg-white p-6 rounded-2xl border border-gray-200">
+                <p class="text-brand font-extrabold">03 · Integración</p>
+                <h3 class="text-gray-900 font-bold mt-2 mb-2">Desarrollo y pruebas</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">Construimos las conexiones por API y probamos con tus datos reales.</p>
+            </li>
+            <li class="bg-white p-6 rounded-2xl border border-gray-200">
+                <p class="text-brand font-extrabold">04 · Despliegue</p>
+                <h3 class="text-gray-900 font-bold mt-2 mb-2">Puesta en marcha y medición</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">Lanzamiento guiado y comparación contra la línea base inicial.</p>
+            </li>
+        </ol>
+    </section>
 
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-            <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
-                <span class="text-red-600 font-extrabold text-lg">01. Diagnóstico</span>
-                <h3 class="text-gray-900 font-bold text-base mt-2 mb-2">Auditoría Operativa</h3>
-                <p class="text-gray-600 text-xs leading-relaxed">Identificamos los puntos donde tu equipo pierde horas-hombre en tareas mecánicas.</p>
+    <section id="faq" class="py-14 md:py-24 px-4 md:px-6 bg-white border-y border-gray-200">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-10">
+                <p class="text-brand font-bold uppercase tracking-wider text-xs">Preguntas frecuentes</p>
+                <h2 class="text-2xl md:text-4xl font-extrabold text-gray-900 mt-2">Lo que suelen preguntarnos</h2>
             </div>
-            <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
-                <span class="text-red-600 font-extrabold text-lg">02. Arquitectura</span>
-                <h3 class="text-gray-900 font-bold text-base mt-2 mb-2">Diseño del Workflow</h3>
-                <p class="text-gray-600 text-xs leading-relaxed">Mapeamos los flujos de datos y la interacción de los Agentes de IA con tu infraestructura.</p>
-            </div>
-            <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
-                <span class="text-red-600 font-extrabold text-lg">03. Integración</span>
-                <h3 class="text-gray-900 font-bold text-base mt-2 mb-2">Desarrollo & Pruebas</h3>
-                <p class="text-gray-600 text-xs leading-relaxed">Construimos las conexiones via API y entrenamos los modelos con tus datos de negocio.</p>
-            </div>
-            <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
-                <span class="text-red-600 font-extrabold text-lg">04. Despliegue</span>
-                <h3 class="text-gray-900 font-bold text-base mt-2 mb-2">Puesta en Marcha</h3>
-                <p class="text-gray-600 text-xs leading-relaxed">Lanzamiento guiado con monitoreo continuo de métricas de eficiencia e impacto financiero.</p>
+            <div class="space-y-3">
+                <details class="group bg-gray-50 border border-gray-200 rounded-xl p-5">
+                    <summary class="font-bold cursor-pointer text-base">¿Qué hace Strata Factory?</summary>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed mt-3">Diseñamos e implementamos agentes de IA y workflows que reemplazan tareas manuales repetitivas (atención por WhatsApp, conciliación administrativa, sincronización de inventario y seguimiento de postventa), integrándonos con los sistemas que tu empresa ya usa.</p>
+                </details>
+                <details class="group bg-gray-50 border border-gray-200 rounded-xl p-5">
+                    <summary class="font-bold cursor-pointer text-base">¿Necesito cambiar mi ERP, CRM o software actual?</summary>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed mt-3">No. Las automatizaciones se conectan por API o integraciones a tus plataformas existentes (por ejemplo Shopify, MercadoLibre, operadores logísticos, calendarios o CRM). En el diagnóstico verificamos qué sistemas tienes y cómo se conectan.</p>
+                </details>
+                <details class="group bg-gray-50 border border-gray-200 rounded-xl p-5">
+                    <summary class="font-bold cursor-pointer text-base">¿Cuánto cuesta automatizar un proceso con IA?</summary>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed mt-3">Depende del alcance, del número de sistemas a integrar y del volumen de operación. El diagnóstico inicial de 30 minutos no tiene costo y termina con una propuesta acotada para el proceso que más tiempo consume.</p>
+                </details>
+                <details class="group bg-gray-50 border border-gray-200 rounded-xl p-5">
+                    <summary class="font-bold cursor-pointer text-base">¿Cuánto demora una implementación?</summary>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed mt-3">Varía según la complejidad. Trabajamos por etapas (diagnóstico, diseño, integración y despliegue) y el plazo estimado se define por escrito en la propuesta, después de revisar tu operación.</p>
+                </details>
+                <details class="group bg-gray-50 border border-gray-200 rounded-xl p-5">
+                    <summary class="font-bold cursor-pointer text-base">¿Cómo se mide el ahorro?</summary>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed mt-3">Fijamos una línea base antes de construir (horas, errores, tiempos de respuesta) y medimos contra ella después del despliegue. Puedes estimar tu costo actual con la <a href="#calculadora" class="text-brand underline">calculadora</a> de esta página.</p>
+                </details>
+                <details class="group bg-gray-50 border border-gray-200 rounded-xl p-5">
+                    <summary class="font-bold cursor-pointer text-base">¿Trabajan con empresas fuera de Chile?</summary>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed mt-3">Sí. Atendemos empresas en Chile, México, Colombia, Perú, Ecuador, Costa Rica y Panamá, de forma remota.</p>
+                </details>
             </div>
         </div>
     </section>
 
-    <section id="contacto" class="py-24 px-6 bg-gray-100 border-t border-gray-200">
-        <div class="max-w-5xl mx-auto bg-white rounded-3xl border border-gray-200 p-8 md:p-16 shadow-xl">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                
-                <!-- Left Info -->
-                <div class="lg:col-span-6 space-y-6">
-                    <span class="text-red-600 font-bold uppercase tracking-wider text-xs">Atención Directa B2B</span>
-                    <h2 class="text-3xl font-extrabold text-gray-900 tracking-tight leading-tight">Evaluemos la eficiencia de tu operation</h2>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        Agenda una sesión de diagnóstico de 30 minutos sin costo. Analizaremos la arquitectura actual de tus procesos y calcularemos el potencial de ahorro de tiempo y costos con IA en Chile, México, Colombia, Perú, Ecuador, Costa Rica o Panamá.
-                    </p>
-                    
-                    <div class="pt-4">
-                        <p class="text-xs text-gray-500 mb-3 font-semibold uppercase tracking-wider">Contacto Inmediato con Ingeniería</p>
-                        <a href="https://wa.me/56981749481?text=Hola%20Strata%20Factory,%20quisiera%20solicitar%20un%20diagnóstico%20de%20eficiencia%20operativa%20con%20IA%20para%20mi%20empresa." 
-                           target="_blank"
-                           rel="noopener"
-                           class="inline-flex items-center justify-center gap-3 w-full bg-[#25D366] text-white px-6 py-4 rounded-xl font-bold hover:bg-[#20ba56] transition-all shadow-lg shadow-green-600/20 text-sm">
-                            Conversar vía WhatsApp (+56 9 8174 9481)
-                        </a>
-                    </div>
+    <section id="contacto" class="py-14 md:py-24 px-4 md:px-6 bg-gray-100">
+        <div class="max-w-5xl mx-auto bg-white rounded-3xl border border-gray-200 p-6 md:p-14 shadow-xl">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+                <div class="lg:col-span-6 space-y-5">
+                    <p class="text-brand font-bold uppercase tracking-wider text-xs">Diagnóstico sin costo</p>
+                    <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900 leading-tight">Cuéntanos qué proceso te consume más tiempo</h2>
+                    <p class="text-gray-600 text-base leading-relaxed">En 30 minutos revisamos tu proceso, qué sistemas usas y si tiene sentido automatizarlo. Sales con una estimación inicial, aunque no trabajemos juntos.</p>
+                    <a href="https://wa.me/56981749481?text=Hola%20Strata%20Factory%2C%20quiero%20un%20diagn%C3%B3stico%20gratuito%20de%20automatizaci%C3%B3n%20con%20IA."
+                       target="_blank" rel="noopener" data-track="whatsapp_click" data-loc="contacto"
+                       class="block w-full text-center bg-[#128C4A] text-white px-6 py-4 rounded-xl font-bold hover:bg-[#0e7a40]">
+                        Prefiero WhatsApp (+56 9 8174 9481)
+                    </a>
                 </div>
 
-                <!-- Right Form -->
-                <div class="lg:col-span-6 bg-gray-50 p-6 rounded-2xl border border-gray-200">
-                    <h3 class="text-base font-bold text-gray-900 mb-4">Solicitar Diagnóstico por Correo</h3>
-                    <form id="leadForm" class="space-y-4" onsubmit="handleFormSubmit(event)">
+                <div class="lg:col-span-6 bg-gray-50 p-5 md:p-6 rounded-2xl border border-gray-200">
+                    <!-- Para guardar leads: pega en data-endpoint la URL de tu webhook (n8n, Formspree, Make, etc.) -->
+                    <form id="leadForm" class="space-y-4" data-endpoint="">
                         <div>
-                            <label for="form-name" class="block text-xs font-medium text-gray-600 mb-1">Nombre y Apellido</label>
-                            <input type="text" id="form-name" required placeholder="Tu nombre" 
-                                   class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:border-red-600 transition-all">
+                            <label for="form-name" class="block text-sm font-semibold text-gray-700 mb-1">Nombre</label>
+                            <input type="text" id="form-name" name="nombre" required autocomplete="name" placeholder="Tu nombre"
+                                   class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-base focus:outline-none focus:border-brand">
                         </div>
-
                         <div>
-                            <label for="form-email" class="block text-xs font-medium text-gray-600 mb-1">Correo Corporativo</label>
-                            <input type="email" id="form-email" required placeholder="nombre@empresa.com" 
-                                   class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:border-red-600 transition-all">
+                            <label for="form-phone" class="block text-sm font-semibold text-gray-700 mb-1">WhatsApp</label>
+                            <input type="tel" id="form-phone" name="whatsapp" required autocomplete="tel" inputmode="tel" placeholder="+56 9 ..."
+                                   class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-base focus:outline-none focus:border-brand">
                         </div>
-
                         <div>
-                            <label for="form-phone" class="block text-xs font-medium text-gray-600 mb-1">Teléfono / WhatsApp</label>
-                            <input type="tel" id="form-phone" required placeholder="+56 9 ..." 
-                                   class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:border-red-600 transition-all">
-                        </div>
-
-                        <div>
-                            <label for="form-industry" class="block text-xs font-medium text-gray-600 mb-1">Área / Sector de la Empresa</label>
-                            <select id="form-industry" required class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-sm text-gray-900 focus:outline-none focus:border-red-600 transition-all">
+                            <label for="form-industry" class="block text-sm font-semibold text-gray-700 mb-1">Rubro</label>
+                            <select id="form-industry" name="rubro" required class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-base focus:outline-none focus:border-brand">
                                 <option value="" disabled selected>Selecciona tu rubro</option>
-                                <option value="inmobiliaria">Inmobiliario & Construcción</option>
-                                <option value="ecommerce">E-commerce & Retail</option>
-                                <option value="salud">Salud & Servicios Médicos</option>
-                                <option value="automotriz">Automotriz & Servicios Técnicos</option>
+                                <option value="inmobiliaria">Inmobiliario &amp; Construcción</option>
+                                <option value="ecommerce">E-commerce &amp; Retail</option>
+                                <option value="salud">Salud &amp; Servicios Médicos</option>
+                                <option value="automotriz">Automotriz &amp; Servicios Técnicos</option>
                                 <option value="servicios">Servicios Profesionales / Consultoría</option>
-                                <option value="otro">Otro Sector Corporativo</option>
+                                <option value="otro">Otro</option>
                             </select>
                         </div>
-
-                        <button type="submit" 
-                                class="w-full bg-red-600 text-white px-6 py-4 rounded-xl font-bold hover:bg-red-700 transition-all shadow-lg shadow-red-600/30 text-sm mt-4">
-                            Enviar Solicitud de Evaluación
+                        <div>
+                            <label for="form-email" class="block text-sm font-semibold text-gray-700 mb-1">Correo <span class="font-normal text-gray-500">(opcional)</span></label>
+                            <input type="email" id="form-email" name="email" autocomplete="email" placeholder="nombre@empresa.com"
+                                   class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-base focus:outline-none focus:border-brand">
+                        </div>
+                        <button type="submit" class="w-full bg-brand text-white px-6 py-4 rounded-xl font-bold hover:bg-brand-dark disabled:opacity-60">
+                            Solicitar diagnóstico gratis
                         </button>
+                        <p class="text-xs text-gray-500">Usamos tus datos solo para contactarte por este diagnóstico.</p>
                     </form>
 
-                    <div id="formSuccess" class="hidden text-center py-6 text-emerald-700 font-medium text-sm space-y-2">
-                        <p class="text-base font-bold text-gray-900">¡Solicitud Registrada con Éxito!</p>
-                        <p class="text-gray-600 text-xs">Un ingeniero de nuestro equipo revisará tus datos y te contactará en un plazo máximo de 24 horas hábiles.</p>
+                    <div id="formSuccess" class="hidden text-center py-4 space-y-4" role="status">
+                        <p class="text-lg font-bold text-gray-900">¡Gracias!</p>
+                        <p id="successNote" class="text-gray-600 text-sm"></p>
+                        <a id="successWa" href="#" target="_blank" rel="noopener" data-track="whatsapp_click" data-loc="post_form"
+                           class="block bg-[#128C4A] text-white px-6 py-4 rounded-xl font-bold hover:bg-[#0e7a40]">Continuar por WhatsApp</a>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
+    </main>
 
-    <!-- FOOTER: Estructura modular en bloques limpios independientes para asegurar escala y alineación perfectas -->
-    <footer class="bg-white text-gray-600 py-16 border-t border-gray-200">
-        <div class="max-w-7xl mx-auto px-6 space-y-12">
-            
-            <!-- Bloque Superior: Logo + Descripción sin interferencia lateral -->
-            <div class="flex flex-col items-center md:items-start space-y-4">
-                <a href="#" class="block -ml-4 md:-ml-6">
-                    <!-- LOGO FOOTER: Escalado al doble con estilo inline estricto y seguro -->
-                    <img src="https://cdn.shopify.com/s/files/1/0773/9683/6592/files/ChatGPT_Image_24_jul_2026_07_28_02_p.m..png?v=1784938405" 
-                         alt="Strata Factory Logo" 
-                         class="w-auto object-contain transition-all"
-                         style="height: 140px !important; min-height: 140px !important; max-height: 150px !important;">
-                </a>
-                <p class="text-gray-500 font-medium text-sm text-center md:text-left max-w-xl">
-                    Firma de Ingeniería de Workflows, Agencia de IA & Consultora Operativa.
-                </p>
-            </div>
-
-            <!-- Separador limpio -->
-            <div class="border-t border-gray-100 w-full pt-8">
-                <!-- Bloque Inferior: Contacto y Copyright distribuidos simétricamente en los extremos -->
-                <div class="flex flex-col md:flex-row items-center justify-between gap-6 text-xs font-medium text-gray-500">
-                    
-                    <!-- Canales de Contacto Informativos -->
-                    <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
-                        <a href="mailto:contacto@stratafactory.cl" class="text-gray-700 hover:text-red-600 font-semibold transition-colors">contacto@stratafactory.cl</a>
-                        <span class="hidden sm:inline text-gray-300">•</span>
-                        <a href="https://wa.me/56981749481" class="text-gray-700 hover:text-red-600 font-semibold transition-colors">+56 9 8174 9481</a>
-                    </div>
-                    
-                    <!-- Copyright Final -->
-                    <div class="text-gray-400">
-                        © 2026 Strata Factory. Todos los derechos reservados.
-                    </div>
-                    
+    <footer class="bg-white text-gray-600 py-10 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 space-y-8">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-8">
+                <div class="space-y-3">
+                    <img src="/assets/logo.webp" width="410" height="112" alt="Strata Factory" loading="lazy" class="h-12 w-auto">
+                    <p class="text-sm max-w-sm">Ingeniería de workflows y agentes de IA para empresas en Chile y LATAM. Santiago, Chile.</p>
                 </div>
+                <nav class="grid grid-cols-2 gap-x-10 gap-y-2 text-sm" aria-label="Pie de página">
+                    <a href="/casos/inmobiliaria" class="hover:text-brand">IA para inmobiliarias</a>
+                    <a href="/casos/ecommerce" class="hover:text-brand">IA para e-commerce</a>
+                    <a href="/casos/salud" class="hover:text-brand">IA para salud y servicios</a>
+                    <a href="#faq" class="hover:text-brand">Preguntas frecuentes</a>
+                    <a href="mailto:contacto@stratafactory.cl" class="hover:text-brand font-semibold text-gray-800">contacto@stratafactory.cl</a>
+                    <a href="https://wa.me/56981749481" data-track="whatsapp_click" data-loc="footer" class="hover:text-brand font-semibold text-gray-800">+56 9 8174 9481</a>
+                </nav>
             </div>
-            
+            <p class="text-xs text-gray-500">© 2026 Strata Factory. Todos los derechos reservados.</p>
         </div>
     </footer>
 
-    <!-- Form Handler Script -->
-    <script>
-        function handleFormSubmit(event) {
-            event.preventDefault();
-            const name = document.getElementById('form-name').value;
-            const email = document.getElementById('form-email').value;
-            const phone = document.getElementById('form-phone').value;
-            const industry = document.getElementById('form-industry').value;
+    <!-- Barra de conversión móvil -->
+    <div id="stickyBar" class="md:hidden fixed bottom-0 inset-x-0 z-50 bg-white border-t border-gray-200 p-3 flex gap-2 transition-transform duration-200" style="padding-bottom:max(0.75rem,env(safe-area-inset-bottom))">
+        <a href="https://wa.me/56981749481?text=Hola%20Strata%20Factory%2C%20quiero%20un%20diagn%C3%B3stico%20gratuito%20de%20automatizaci%C3%B3n%20con%20IA."
+           target="_blank" rel="noopener" data-track="whatsapp_click" data-loc="sticky"
+           class="flex-1 text-center bg-[#128C4A] text-white py-3.5 rounded-xl font-bold text-sm">WhatsApp</a>
+        <a href="#contacto" data-track="cta_click" data-loc="sticky"
+           class="flex-1 text-center bg-brand text-white py-3.5 rounded-xl font-bold text-sm">Diagnóstico gratis</a>
+    </div>
 
-            const message = `Hola Strata Factory, solicito un diagnóstico de eficiencia operativa:\n- Nombre: ${name}\n- Email: ${email}\n- WhatsApp: ${phone}\n- Sector: ${industry}`;
-            const waUrl = `https://wa.me/56981749481?text=${encodeURIComponent(message)}`;
-
-            document.getElementById('leadForm').classList.add('hidden');
-            document.getElementById('formSuccess').classList.remove('hidden');
-
-            setTimeout(() => {
-                window.open(waUrl, '_blank');
-            }, 800);
-        }
-    </script>
+    <script src="/assets/app.js" defer></script>
 </body>
 </html>

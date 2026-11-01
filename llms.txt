@@ -1,0 +1,22 @@
+# Strata Factory
+
+> Firma de ingeniería de workflows y agentes de IA con base en Santiago, Chile. Automatiza procesos operativos de empresas en Chile y LATAM (WhatsApp, finanzas administrativas, inventario, postventa), integrándose con los sistemas que la empresa ya usa. Atiende de forma remota en Chile, México, Colombia, Perú, Ecuador, Costa Rica y Panamá.
+
+## Qué hace
+- Agentes de IA para atención comercial y WhatsApp
+- Workflows financieros y administrativos
+- Sincronización de inventarios y operaciones multicanal
+- Trazabilidad, auditoría y postventa con respaldo documental
+
+## Cómo trabaja
+Diagnóstico sin costo de 30 minutos, línea base medible, diseño del workflow, integración por API y despliegue con medición contra la línea base.
+
+## Páginas
+- [Inicio](https://stratafactory.cl/): servicios, metodología, calculadora de costo de tareas manuales y preguntas frecuentes
+- [IA para postventa inmobiliaria](https://stratafactory.cl/casos/inmobiliaria)
+- [IA para e-commerce y retail](https://stratafactory.cl/casos/ecommerce)
+- [IA para salud, estética y servicios](https://stratafactory.cl/casos/salud)
+
+## Contacto
+- Email: contacto@stratafactory.cl
+- WhatsApp: +56 9 8174 9481

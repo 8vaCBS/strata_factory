@@ -1,180 +1,112 @@
 <!DOCTYPE html>
 <html lang="es-CL" class="scroll-smooth">
 <head>
-    <!-- Google tag (gtag.js) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA para Salud, Estética y Consultoría | Agendamiento y Comisiones | Strata Factory</title>
+    <meta name="description" content="Cómo automatizar el agendamiento por WhatsApp, confirmar asistencia, rellenar cupos cancelados y liquidar comisiones de profesionales con IA. Caso de aplicación.">
+    <meta name="author" content="Strata Factory">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+    <meta name="theme-color" content="#cc0000">
+    <link rel="canonical" href="https://stratafactory.cl/casos/salud">
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Strata Factory">
+    <meta property="og:url" content="https://stratafactory.cl/casos/salud">
+    <meta property="og:title" content="IA para Salud, Estética y Consultoría | Agendamiento y Comisiones | Strata Factory">
+    <meta property="og:description" content="Cómo automatizar el agendamiento por WhatsApp, confirmar asistencia, rellenar cupos cancelados y liquidar comisiones de profesionales con IA. Caso de aplicación.">
+    <meta property="og:image" content="https://stratafactory.cl/assets/og.jpg">
+    <meta property="og:locale" content="es_CL">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Agendamiento con IA y comisiones automáticas para salud, estética y consultoría","description":"Cómo automatizar el agendamiento por WhatsApp, confirmar asistencia, rellenar cupos cancelados y liquidar comisiones de profesionales con IA. Caso de aplicación.","inLanguage":"es-CL","mainEntityOfPage":"https://stratafactory.cl/casos/salud","image":"https://stratafactory.cl/assets/og.jpg","datePublished":"2026-07-24","dateModified":"2026-11-01","author":{"@type":"Organization","name":"Strata Factory","url":"https://stratafactory.cl/"},"publisher":{"@type":"Organization","name":"Strata Factory","url":"https://stratafactory.cl/","logo":{"@type":"ImageObject","url":"https://stratafactory.cl/assets/favicon.png"}}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://stratafactory.cl/"},{"@type":"ListItem","position":2,"name":"Casos","item":"https://stratafactory.cl/#casos"},{"@type":"ListItem","position":3,"name":"Salud, estética y servicios","item":"https://stratafactory.cl/casos/salud"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Funciona con mi software de agenda?","acceptedAnswer":{"@type":"Answer","text":"Se conecta a calendarios, CRM o software médico que tengan API o integración. Lo confirmamos en el diagnóstico."}},{"@type":"Question","name":"¿Cómo se calculan las comisiones?","acceptedAnswer":{"@type":"Answer","text":"Con las reglas que ya usas (por atención, por procedimiento o porcentaje). Las reglas se configuran y quedan documentadas."}}]}]}</script>
+    <link rel="preload" as="image" href="/assets/logo.webp" type="image/webp">
+    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" media="print" onload="this.media='all'">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-578XBGRQKM"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-578XBGRQKM');
     </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IA en Salud, Estética & Consultoría | Agendamiento & Comisiones | Strata Factory</title>
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://cdn.shopify.com/s/files/1/0773/9683/6592/files/ChatGPT_Image_24_jul_2026_07_30_05_p.m..png?v=1784938405">
-
-    <!-- SEO & GEO Meta Tags -->
-    <meta name="description" content="Caso de Aplicación Salud & Servicios: Agendamiento conversacional por WhatsApp con IA, reducción del 30% en inasistencias y liquidación automatizada de comisiones a profesionales.">
-    <meta name="keywords" content="agendamiento ia clinicas salud chile, confirmacion citas whatsapp ia, automatizacion comisiones medicas estetica, strata factory">
-    <meta name="author" content="Strata Factory">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://stratafactory.cl/casos/salud">
-
-    <!-- Schema.org JSON-LD -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "Agendamiento Conversacional y Automatización Operativa para Centros de Salud, Estética y Consultoría",
-      "description": "Flujo de IA en WhatsApp para agendamiento autónomo, reprogramación automatizada y cálculo transparente de comisiones a profesionales.",
-      "author": {
-        "@type": "Organization",
-        "name": "Strata Factory"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Strata Factory",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://cdn.shopify.com/s/files/1/0773/9683/6592/files/ChatGPT_Image_24_jul_2026_07_30_05_p.m..png?v=1784938405"
-        }
-      }
-    }
-    </script>
-
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: { sans: ['Inter', 'sans-serif'] },
-                    colors: {
-                        emerald: { 50: '#ecfdf5', 200: '#a7f3d0', 800: '#065f46' },
-                        red: { 600: '#dc2626', 700: '#b91c1c' },
-                        brand: { red: '#cc0000', darkRed: '#a80000' }
-                    }
-                }
-            }
-        }
-    </script>
 </head>
-<body class="bg-gray-100 text-gray-900 font-sans selection:bg-red-600 selection:text-white">
-
-    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200">
-        <div class="max-w-7xl mx-auto px-6 py-4 min-h-[100px] md:min-h-[120px] flex items-center justify-between">
-            <a href="/" class="flex items-center gap-3">
-                <img src="https://cdn.shopify.com/s/files/1/0773/9683/6592/files/ChatGPT_Image_24_jul_2026_07_30_05_p.m..png?v=1784938405" 
-                     alt="Strata Factory Logo" 
-                     class="h-24 sm:h-28 md:h-32 w-auto object-contain">
-            </a>
-            <a href="/#contacto" class="bg-[#cc0000] text-white px-5 py-2.5 rounded-xl font-bold hover:bg-red-700 transition-all text-sm shadow-md shadow-red-600/20">
-                Iniciar Diagnóstico
-            </a>
+<body class="bg-gray-100 text-gray-900 pb-24 md:pb-0 selection:bg-brand selection:text-white">
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200" aria-label="Principal">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 h-16 md:h-20 flex items-center justify-between gap-3">
+            <a href="/" aria-label="Strata Factory — inicio"><img src="/assets/logo.webp" width="410" height="112" alt="Strata Factory" class="h-10 md:h-14 w-auto" fetchpriority="high"></a>
+            <a href="#contacto" data-track="cta_click" data-loc="nav" class="bg-brand text-white px-4 py-2.5 rounded-xl font-bold hover:bg-brand-dark text-sm whitespace-nowrap">Diagnóstico gratis</a>
         </div>
     </nav>
 
-    <header class="py-16 md:py-24 px-6 bg-white border-b border-gray-200">
-        <div class="max-w-4xl mx-auto">
-            <a href="/#casos" class="inline-flex items-center gap-2 text-xs font-bold text-[#cc0000] uppercase tracking-wider mb-6 hover:underline">
-                <i class="fa-solid fa-arrow-left text-[10px]"></i>
-                <span>Volver a Casos de Aplicación</span>
-            </a>
-            <h1 class="text-3xl md:text-5xl font-black text-gray-900 tracking-tight leading-tight mb-6">
-                Agendamiento Inteligente & Gestión de Comisiones en Salud y Consultoría
-            </h1>
-            <p class="text-lg md:text-xl text-gray-600 leading-relaxed">
-                Cómo la IA elimina las horas muertas por inasistencia (no-shows), automatiza los recordatorios interactivos y calcula la liquidación de honorarios para profesionales sin errores manuales.
-            </p>
+    <main>
+    <header class="py-10 md:py-20 px-4 md:px-6 bg-white border-b border-gray-200">
+        <div class="max-w-3xl mx-auto">
+            <nav aria-label="Migas de pan" class="text-sm text-gray-500 mb-5"><a href="/" class="hover:text-brand">Inicio</a> › <a href="/#casos" class="hover:text-brand">Casos</a> › <span class="text-gray-800">Salud, estética y servicios</span></nav>
+            <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 tracking-tight leading-tight mb-6">Agendamiento con IA y comisiones automáticas para salud, estética y consultoría</h1>
+            <div class="bg-gray-50 border-l-4 border-brand p-4 md:p-5 rounded-r-xl">
+                <p class="text-xs font-bold uppercase tracking-wider text-brand mb-1">Respuesta corta</p>
+                <p class="text-gray-800 text-base md:text-lg leading-relaxed">Un agente de IA en WhatsApp agenda citas, confirma asistencia y ofrece cupos cancelados a la lista de espera, mientras el sistema registra las atenciones efectivas y emite la liquidación mensual de honorarios por profesional.</p>
+            </div>
+            <a href="https://wa.me/56981749481?text=Hola%20Strata%20Factory%2C%20vi%20el%20caso%20de%20salud%2C%20est%C3%A9tica%20y%20servicios%20y%20quiero%20un%20diagn%C3%B3stico%20para%20mi%20empresa." target="_blank" rel="noopener" data-track="whatsapp_click" data-loc="case_hero" class="mt-6 inline-block w-full sm:w-auto text-center bg-[#128C4A] text-white px-7 py-4 rounded-xl font-bold hover:bg-[#0e7a40]">Consultar este caso por WhatsApp</a>
         </div>
     </header>
 
-    <main class="py-16 px-6 max-w-4xl mx-auto space-y-12">
-        
-        <!-- Section 1: El Desafío -->
-        <section class="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm space-y-4">
-            <h2 class="text-2xl font-bold text-gray-900">1. El Problema Operativo</h2>
-            <p class="text-gray-600 text-sm md:text-base leading-relaxed">
-                Los centros de salud, clínicas estéticas y firmas de consultoría enfrentan dos fugas silenciosas de dinero: pacientes o clientes que no asisten a sus citas reservadas (tasa de <em>no-show</em> promedio del 25%), y la pesada carga administrativa de conciliar cuántas sesiones o procedimientos realizó cada profesional para calcular sus comisiones al final del mes.
-            </p>
-            <div class="bg-red-50 border border-red-200 p-4 rounded-2xl text-xs text-red-700 font-semibold">
-                Impacto: Pérdida directa de horas profesionales no facturables y fricción interna por errores en el pago de comisiones.
-            </div>
+    <div class="py-10 md:py-16 px-4 md:px-6 max-w-3xl mx-auto space-y-8">
+        <section class="bg-white p-6 md:p-8 rounded-2xl border border-gray-200 space-y-4">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-900">El problema operativo</h2>
+            <p class="text-gray-700 text-base leading-relaxed">Los centros de salud, clínicas estéticas y firmas de consultoría pierden horas facturables por inasistencias y dedican tiempo administrativo a conciliar cuántas sesiones realizó cada profesional para calcular comisiones.</p>
+            <p class="bg-red-50 border border-red-200 p-4 rounded-xl text-sm text-red-800 font-semibold">Consecuencia: horas profesionales no facturadas y fricción interna por errores en el pago de comisiones. Tu tasa real de inasistencia se mide en el diagnóstico.</p>
         </section>
 
-        <!-- Section 2: La Solución Strata Factory -->
-        <section class="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm space-y-6">
-            <h2 class="text-2xl font-bold text-gray-900">2. La Arquitectura de Solución con IA</h2>
-            <p class="text-gray-600 text-sm md:text-base leading-relaxed">
-                Diseñamos un flujo conversacional y administrativo unificado conectado con el software médico, CRM o calendarios de la empresa:
-            </p>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4">
-                <div class="bg-gray-50 p-4 rounded-xl border border-gray-200">
-                    <span class="text-[#cc0000] font-bold text-sm block mb-1">01. Agendamiento IA</span>
-                    <p class="text-xs text-gray-600">El paciente coordina fecha, hora y especialista por WhatsApp conversando de forma natural.</p>
-                </div>
-                <div class="bg-gray-50 p-4 rounded-xl border border-gray-200">
-                    <span class="text-gray-900 font-bold text-sm block mb-1">02. Confirmación & Re-lleno</span>
-                    <p class="text-xs text-gray-600">Si un paciente cancela, la IA ofrece de inmediato ese cupo a personas en lista de espera.</p>
-                </div>
-                <div class="bg-gray-50 p-4 rounded-xl border border-gray-200">
-                    <span class="text-[#cc0000] font-bold text-sm block mb-1">03. Liquidación Automática</span>
-                    <p class="text-xs text-gray-600">El sistema registra atenciones efectivas y emite el informe mensual de honorarios por profesional.</p>
-                </div>
-            </div>
+        <section class="bg-white p-6 md:p-8 rounded-2xl border border-gray-200 space-y-5">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-900">La arquitectura de la solución</h2>
+            <ol class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                <li class="bg-gray-50 p-4 rounded-xl border border-gray-200"><p class="text-brand font-bold text-sm mb-1">01. Agendamiento con IA</p><p class="text-sm text-gray-700 leading-relaxed">El paciente coordina fecha, hora y especialista por WhatsApp conversando de forma natural.</p></li>
+                <li class="bg-gray-50 p-4 rounded-xl border border-gray-200"><p class="text-brand font-bold text-sm mb-1">02. Confirmación y relleno</p><p class="text-sm text-gray-700 leading-relaxed">Si alguien cancela, la IA ofrece ese cupo a personas en lista de espera.</p></li>
+                <li class="bg-gray-50 p-4 rounded-xl border border-gray-200"><p class="text-brand font-bold text-sm mb-1">03. Liquidación automática</p><p class="text-sm text-gray-700 leading-relaxed">Se registran las atenciones efectivas y se emite el informe mensual por profesional.</p></li>
+            </ol>
         </section>
 
-        <!-- Section 3: Resultados -->
-        <section class="bg-gray-900 text-white p-8 rounded-3xl shadow-xl space-y-6">
-            <h2 class="text-2xl font-bold text-white">3. Impacto Financiero & Operativo</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="border-b md:border-b-0 md:border-r border-gray-800 pb-4 md:pb-0 md:pr-6">
-                    <span class="text-4xl font-extrabold text-red-500 block mb-2">+30%</span>
-                    <p class="text-xs text-gray-300">Aumento en la tasa de asistencia efectiva a citas médicas o consultorías.</p>
-                </div>
-                <div>
-                    <span class="text-4xl font-extrabold text-white block mb-2">0 hrs</span>
-                    <p class="text-xs text-gray-300">Tiempo requerido en cálculos manuales de liquidación de comisiones al cierre de mes.</p>
-                </div>
-            </div>
+        <section class="bg-gray-900 text-white p-6 md:p-8 rounded-2xl space-y-5">
+            <h2 class="text-xl md:text-2xl font-bold">Cómo medimos el resultado</h2>
+            <p class="text-gray-300 text-sm leading-relaxed">No publicamos porcentajes genéricos: fijamos una línea base en tu operación y comparamos contra ella tras el despliegue. Estos son los indicadores de este caso.</p>
+            <dl class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="border border-gray-700 rounded-xl p-4"><dt class="font-bold text-white">Tasa de asistencia</dt><dd class="text-sm text-gray-300 mt-1">Citas atendidas sobre citas agendadas, antes y después.</dd><dd class="text-xs text-gray-400 mt-2">Fuente de datos: Agenda o software médico</dd></div>
+                <div class="border border-gray-700 rounded-xl p-4"><dt class="font-bold text-white">Horas de liquidación</dt><dd class="text-sm text-gray-300 mt-1">Horas dedicadas cada mes a calcular comisiones.</dd><dd class="text-xs text-gray-400 mt-2">Fuente de datos: Registro interno de administración</dd></div>
+            </dl>
         </section>
 
-        <!-- CTA Final -->
-        <div class="bg-white p-8 rounded-3xl border border-gray-200 text-center space-y-6 shadow-sm">
-            <h3 class="text-xl font-bold text-gray-900">¿Quieres optimizar tu agenda y la gestión de tus profesionales?</h3>
-            <a href="/#contacto" class="inline-block bg-[#cc0000] text-white px-8 py-4 rounded-xl font-bold hover:bg-red-700 transition-all text-sm shadow-md shadow-red-600/20">
-                Solicitar Diagnóstico para Salud & Servicios
-            </a>
-        </div>
+        <section class="bg-white p-6 md:p-8 rounded-2xl border border-gray-200 space-y-3">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-900">Preguntas frecuentes</h2>
+            <details class="bg-gray-50 border border-gray-200 rounded-xl p-4"><summary class="font-bold cursor-pointer">¿Funciona con mi software de agenda?</summary><p class="text-gray-700 text-sm md:text-base leading-relaxed mt-2">Se conecta a calendarios, CRM o software médico que tengan API o integración. Lo confirmamos en el diagnóstico.</p></details>
+            <details class="bg-gray-50 border border-gray-200 rounded-xl p-4"><summary class="font-bold cursor-pointer">¿Cómo se calculan las comisiones?</summary><p class="text-gray-700 text-sm md:text-base leading-relaxed mt-2">Con las reglas que ya usas (por atención, por procedimiento o porcentaje). Las reglas se configuran y quedan documentadas.</p></details>
+        </section>
 
+        <section id="contacto" class="bg-white p-6 md:p-8 rounded-2xl border border-gray-200 text-center space-y-4 shadow-sm">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-900">¿Quieres evaluar este caso en tu empresa?</h2>
+            <p class="text-gray-600 text-base">Diagnóstico de 30 minutos sin costo. Sales con una estimación inicial.</p>
+            <a href="https://wa.me/56981749481?text=Hola%20Strata%20Factory%2C%20vi%20el%20caso%20de%20salud%2C%20est%C3%A9tica%20y%20servicios%20y%20quiero%20un%20diagn%C3%B3stico%20para%20mi%20empresa." target="_blank" rel="noopener" data-track="whatsapp_click" data-loc="case_cta" class="block bg-[#128C4A] text-white px-7 py-4 rounded-xl font-bold hover:bg-[#0e7a40]">Hablar por WhatsApp</a>
+            <a href="/?sector=salud#contacto" data-track="cta_click" data-loc="case_form" class="block bg-brand text-white px-7 py-4 rounded-xl font-bold hover:bg-brand-dark">Dejar mis datos y que me contacten</a>
+        </section>
+
+        <aside aria-label="Otros casos" class="text-sm">
+            <p class="font-bold text-gray-900 mb-2">Otros casos</p>
+            <ul class="space-y-1"><li><a class="text-brand underline" href="/casos/inmobiliaria">Postventa inmobiliaria</a></li><li><a class="text-brand underline" href="/casos/ecommerce">E-commerce y retail</a></li></ul>
+        </aside>
+    </div>
     </main>
 
-    <footer class="bg-white text-gray-600 py-12 border-t border-gray-200">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-xs">
-            <div class="flex flex-col items-center md:items-start gap-2">
-                <img src="https://cdn.shopify.com/s/files/1/0773/9683/6592/files/ChatGPT_Image_24_jul_2026_07_30_05_p.m..png?v=1784938405" 
-                     alt="Strata Factory Logo" 
-                     class="h-10 md:h-12 w-auto object-contain">
-                <p class="text-gray-500">Firma de Ingeniería de Workflows e Inteligencia Artificial Operativa.</p>
-            </div>
-            <div class="flex items-center gap-6">
-                <a href="mailto:contacto@stratafactory.cl" class="hover:text-red-600 transition-colors">contacto@stratafactory.cl</a>
-                <span>•</span>
-                <a href="https://wa.me/56981749481" class="hover:text-red-600 transition-colors">+56 9 8174 9481</a>
-            </div>
-            <div class="text-gray-500">
-                © 2026 Strata Factory. Todos los derechos reservados.
-            </div>
+    <footer class="bg-white text-gray-600 py-8 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-sm">
+            <p>© 2026 Strata Factory · Santiago, Chile</p>
+            <p class="flex gap-5"><a href="mailto:contacto@stratafactory.cl" class="hover:text-brand">contacto@stratafactory.cl</a><a href="https://wa.me/56981749481" class="hover:text-brand">+56 9 8174 9481</a></p>
         </div>
     </footer>
+
+    <div id="stickyBar" class="md:hidden fixed bottom-0 inset-x-0 z-50 bg-white border-t border-gray-200 p-3 flex gap-2 transition-transform duration-200" style="padding-bottom:max(0.75rem,env(safe-area-inset-bottom))">
+        <a href="https://wa.me/56981749481?text=Hola%20Strata%20Factory%2C%20vi%20el%20caso%20de%20salud%2C%20est%C3%A9tica%20y%20servicios%20y%20quiero%20un%20diagn%C3%B3stico%20para%20mi%20empresa." target="_blank" rel="noopener" data-track="whatsapp_click" data-loc="sticky" class="flex-1 text-center bg-[#128C4A] text-white py-3.5 rounded-xl font-bold text-sm">WhatsApp</a>
+        <a href="/?sector=salud#contacto" data-track="cta_click" data-loc="sticky" class="flex-1 text-center bg-brand text-white py-3.5 rounded-xl font-bold text-sm">Diagnóstico gratis</a>
+    </div>
+    <script src="/assets/app.js" defer></script>
 </body>
 </html>
