@@ -81,12 +81,15 @@
       btn.disabled = true;
       btn.textContent = 'Enviando…';
       if (!endpoint) { done(false); return; }
+      // Google Apps Script no responde CORS: se envía como text/plain en modo no-cors
+      // (respuesta opaca; si el fetch no falla, la solicitud llegó al servidor).
       fetch(endpoint, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
         body: JSON.stringify(data),
         keepalive: true
-      }).then(function (r) { done(r.ok); }).catch(function () { done(false); });
+      }).then(function () { done(true); }).catch(function () { done(false); });
     });
   }
 
