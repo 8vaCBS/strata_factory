@@ -120,10 +120,18 @@
             <a href="#contacto" data-track="cta_click" data-loc="nav" class="bg-brand text-white px-4 py-2.5 rounded-xl font-bold hover:bg-brand-dark text-sm whitespace-nowrap">
                 Diagnóstico gratis
             </a>
+            <button id="menuBtn" type="button" class="md:hidden p-2 -mr-2 text-gray-800" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+                <svg id="iconOpen" class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+                <svg id="iconClose" class="w-7 h-7 hidden" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
+            </button>
         </div>
-        <div class="md:hidden border-t border-gray-100 overflow-x-auto">
-            <div class="flex gap-5 px-4 py-2.5 text-sm font-semibold text-gray-700 whitespace-nowrap">
-                <a href="#por-que">Por qué confiar</a><a href="#calculadora">Calculadora</a><a href="#capacidades">Servicios</a><a href="#casos">Casos</a><a href="#faq">Preguntas</a>
+        <div id="mobileMenu" class="hidden md:hidden border-t border-gray-100 bg-white">
+            <div class="px-4 pb-2">
+                <a href="#por-que" class="block py-3.5 border-b border-gray-100 text-base font-semibold text-gray-800">Por qué confiar</a>
+                <a href="#calculadora" class="block py-3.5 border-b border-gray-100 text-base font-semibold text-gray-800">Calculadora</a>
+                <a href="#capacidades" class="block py-3.5 border-b border-gray-100 text-base font-semibold text-gray-800">Servicios</a>
+                <a href="#casos" class="block py-3.5 border-b border-gray-100 text-base font-semibold text-gray-800">Casos</a>
+                <a href="#faq" class="block py-3.5 border-b border-gray-100 text-base font-semibold text-gray-800">Preguntas</a>
             </div>
         </div>
     </nav>

@@ -128,4 +128,19 @@
       bar.classList.toggle('translate-y-full', en[0].isIntersecting);
     }, { threshold: 0.15 }).observe(contact);
   }
+  // Menú hamburguesa (móvil)
+  var menuBtn = document.getElementById('menuBtn');
+  var menu = document.getElementById('mobileMenu');
+  if (menuBtn && menu) {
+    function setMenu(open) {
+      menu.classList.toggle('hidden', !open);
+      document.getElementById('iconOpen').classList.toggle('hidden', open);
+      document.getElementById('iconClose').classList.toggle('hidden', !open);
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      menuBtn.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+    }
+    menuBtn.addEventListener('click', function () { setMenu(menu.classList.contains('hidden')); track('menu_toggle'); });
+    menu.addEventListener('click', function (e) { if (e.target.closest('a')) setMenu(false); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false); });
+  }
 })();
